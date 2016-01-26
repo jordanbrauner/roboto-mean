@@ -19,12 +19,6 @@
         controller: "RobotIndexController",
         controllerAs: "RobotIndexViewModel"
       });
-      // .state("robotShow", {
-      //   url: "/robots/:id",
-      //   templateUrl: "js/robots/show.html",
-      //   controller: "RobotShowController",
-      //   controllerAs: "RobotShowViewModel"
-      // });
   }
 
 })();
