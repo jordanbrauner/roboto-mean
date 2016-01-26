@@ -7,7 +7,7 @@ var morgan = require("morgan");
 var bodyParser = require("body-parser");
 
 // CONFIGURE
-mongoose.connect("mongodb://" + (process.env.MONGODB_URL || "localhost/robotwarehouse"));
+mongoose.connect("mongodb://" + (process.env.MONGODB_URL_RW || "localhost/robotwarehouse"));
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error: '));
 db.once('open', function() {

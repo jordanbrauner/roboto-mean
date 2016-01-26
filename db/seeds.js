@@ -3,7 +3,7 @@ var schema = require("./schema");
 var Robot = require("../models/robot");
 var robotData = require("./robot_data.json");
 
-mongoose.connect("mongodb://" + (process.env.MONGODB_URL || "localhost/robotwarehouse"));
+mongoose.connect("mongodb://" + (process.env.MONGODB_URL_RW || "localhost/robotwarehouse"));
 var db = mongoose.connection;
 
 db.on("error", function(err) {
