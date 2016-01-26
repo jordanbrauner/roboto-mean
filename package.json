@@ -1,0 +1,19 @@
+{
+  "name": "simple_mean_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jordan Brauner",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "method-override": "^2.3.5",
+    "mongodb": "^2.1.4",
+    "mongoose": "^4.3.7",
+    "morgan": "^1.6.1"
+  }
+}
