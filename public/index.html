@@ -1,22 +1,42 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" data-ng-app="robotWarehouse">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Robot Warehouse</title>
-  <!-- Require CDN -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.1/angular.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.17/angular-ui-router.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
-  <!-- Require Files -->
+  <!-- Require scripts -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-  <h1><a ui-sref="robotIndex">Robot Warehouse</a></h1>
-  <h4>For all your Robot Needs</h4>
-  <main data-ui-view></main>
+  <nav class="container-fluid" id="nav-wrapper">
+    <!-- Notice Bar -->
+    <div class="container-fluid" id="notice-bar-container">
+      <p><strong>Latest addition</strong>: Super Robot Red Baron</p>
+    </div>
+    <!-- Logo and nav links -->
+    <div class="container-fluid row" id="nav-bar-container">
+      <div class="col-md-4" id="logo-container">
+        <h1><strong>Roboto</h1>
+      </div>
+      <div class="col-med-8" id="nav-option-container">
+        <p><a data-ui-sref="robotIndex">Warehouse</a></p>
+        <p>Search</p>
+        <p>Location</p>
+      </div>
+    </div>
+  </nav>
+  <main data-ui-view class="container"></main>
 
-  <!-- Require scripts -->
+  <!-- Require CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.1/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.17/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!-- Require Files -->
   <script src="./js/app.js"></script>
   <script src="./js/robots/robots.js"></script>
   <script src="./js/robots/robot.factory.js"></script>

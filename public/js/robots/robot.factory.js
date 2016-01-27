@@ -4,7 +4,7 @@
   angular
     .module("robots")
     .factory("RobotFactory", [
-      "$Resource",
+      "$resource",
       FactoryFunction
     ]);
 

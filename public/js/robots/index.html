@@ -1,1 +1,6 @@
-<h4>All Robots</h4>
+<div data-ng-repeat="robot in RobotIndexViewModel.robots">
+  <p><strong>Type: </strong>{{robot.type}}</p>
+  <p><strong>Class: </strong>{{robot.class}}</p>
+  <p><strong>Manufacturer: </strong>{{robot.manufacturer}}</p>
+  <p><strong>Name: </strong>{{robot.name}}</p>
+</div>
