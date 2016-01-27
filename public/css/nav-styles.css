@@ -36,14 +36,14 @@ Navbar
 /* Nav Bar */
 #nav-bar-container {
   display: flex;
-  height: 7em;
-  padding-top: 1.6em;
+  height: 6.5em;
+  padding-top: 1.3em;
   padding-left: 4em;
   padding-right: 4em;
 }
 
 #logo-container img {
-  width: 24em;
+  width: 23em;
 }
 
 #nav-options-container {

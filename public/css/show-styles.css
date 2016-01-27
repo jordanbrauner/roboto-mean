@@ -2,12 +2,69 @@
   height: 50em;
   width: 100%;
   background-image: url("/img/gundam-1.jpg");
+  /*background-image: url("/img/big-dog-1.jpg");*/
+  /*background-image: url("/img/petman-1.jpg");*/
   background-size: cover;
   background-color: lightgray;
 }
 
 .shadow {
-  /*-moz-box-shadow:    inset 10em 10em 10px #000000;*/
-  /*-webkit-box-shadow: inset 0 0 10px #000000;*/
-  box-shadow:         inset 0 0 13em #000;
+  box-shadow: inset 0 0 13em #000;
+}
+
+/* Padding for all main content aligned left */
+#robot-splash-container, #robot-left-container {
+  padding-left: 6em;
+  padding-right: 4em;
+}
+
+#robot-splash-container {
+  display: flex;
+  justify-content: flex-start;
+  height: 7em;
+  background-color: #000;
+}
+
+#robot-splash-text {
+  display: flex;
+  align-items: center;
+}
+
+#robot-splash-text h3 {
+  padding-top: -5em;
+  font-size: 2.5em;
+  color: white;
+  margin-right: 1em;
+}
+
+#robot-splash-text h4 {
+  color: white;
+  padding-top: .9em;
+  text-transform: uppercase;
+  font-size: .75em;
+  font-weight: 200;
+  letter-spacing: .7em
+}
+
+#robot-left-container {
+  padding-top: 3em;
+}
+
+#robot-bio {
+  font-size: .9em;
+  line-height: 2em;
+  margin-bottom: 5em;
+}
+
+#robot-gallery-container {
+  border-top: .1em solid black;
+  padding-top: 2em;
+  display: flex;
+}
+
+.placeholder-image {
+  height: 6em;
+  width: 6em;
+  background-color: #BBB;
+  margin-right: 1em;
 }

@@ -28,3 +28,9 @@ a:hover {
   text-decoration: none;
   color: red;
 }
+
+.robot-subtitle {
+  font-size: .9em;
+  font-weight: 600;
+  text-transform: uppercase;
+}

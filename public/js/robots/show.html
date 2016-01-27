@@ -1,17 +1,26 @@
 <div id="jumbo-image" class="shadow"></div>
 
-<div class="row">
-  <div class="col-md-8 col-xs-8">
+<div class="row" id="show-container">
+  <div class="col-md-7 col-xs-7">
     <div id="robot-splash-container">
-      <h3 id="robot-name">{{RobotShowViewModel.robot.name}}</h3>
-      <h4 id="robot-tagline">{{RobotShowViewModel.robot.tagline}}</h4>
+      <div id="robot-splash-text">
+        <h3 id="robot-name">{{RobotShowViewModel.robot.name}}</h3>
+        <h4 id="robot-tagline">{{RobotShowViewModel.robot.tagline}}</h4>
+      </div>
     </div>
     <div id="robot-left-container">
       <p id="robot-bio">{{RobotShowViewModel.robot.bio}}</p>
       <p class="robot-subtitle">// IN THE FIELD</p>
+      <div id="robot-gallery-container">
+        <div class="placeholder-image"></div>
+        <div class="placeholder-image"></div>
+        <div class="placeholder-image"></div>
+        <div class="placeholder-image"></div>
+        <div class="placeholder-image"></div>
+      </div>
     </div>
   </div>
-  <div class="col-md-4 col-xs-4">
+  <div class="col-md-5 col-xs-5">
     <div id="statistics-container">
       <p class="robot-subtitle">// STATISTICS</p>
       <p>Power: {{RobotShowViewModel.robot.statistics.power}}</p>
