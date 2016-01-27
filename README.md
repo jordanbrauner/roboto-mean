@@ -1,4 +1,5 @@
-# robotwarehouse
-A quick angular exercise.
+# Roboto
+One MEAN exercise.
 
-## Just testing out angular.
+## About
+Roboto is a fun, fictional app for lovers of robots (particularly of the super variety). This is really just a platform for me to reinforce my MEAN stack and CSS knowledge.

@@ -2,7 +2,7 @@
   "use strict";
 
   angular
-    .module("robotWarehouse", [
+    .module("roboto", [
       "ui.router",
       "robots"
     ])
