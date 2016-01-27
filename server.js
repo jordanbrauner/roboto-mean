@@ -6,6 +6,7 @@ var mongoose = require("mongoose");
 var morgan = require("morgan");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
+var robotsController = require("./controllers/robotsController");
 
 
 // CONFIGURE MONGOOSE
@@ -31,7 +32,9 @@ app.use(methodOverride());
 app.use(express.static(__dirname + '/public'));
 
 // ROUTES
-app.use("/robotdata", require("./controllers/robotsController"));
+// app.use(routes);
+
+app.use("/robotdata", robotsController);
 app.get("/", function(req, res) {
   res.render("index");
 });

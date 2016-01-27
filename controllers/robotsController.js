@@ -13,4 +13,10 @@ router.get("/", function(req, res) {
   });
 });
 
+router.get("/:id", function(req, res) {
+  Robot.findById(req.params.id).then(function(results) {
+    res.json(results);
+  });
+});
+
 module.exports = router;

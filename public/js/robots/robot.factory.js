@@ -9,7 +9,7 @@
     ]);
 
   function FactoryFunction($resource) {
-    return $resource("http://localhost:4000/robotdata");
+    return $resource("http://localhost:4000/robotdata/:id");
   }
 
 })();

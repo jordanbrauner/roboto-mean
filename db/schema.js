@@ -5,10 +5,21 @@ var ObjectId = Schema.Types.ObjectId;
 
 var RobotSchema = new Schema(
   {
-    type: String,
-    class: String,
-    manufacturer: String,
     name: String,
+    tagline: String,
+    bio: String,
+    manufacturer: String,
+    country: String,
+    rClass: String,
+    year: String,
+    photoUrl: String,
+    statistics: {
+      power: Number,
+      energy: Number,
+      agility: Number,
+      armor: Number,
+    },
+    pilots: []
   },
   {
     toObject: {virtuals: true},

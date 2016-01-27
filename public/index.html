@@ -6,29 +6,50 @@
   <title>Roboto</title>
   <!-- Require scripts -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/core-styles.css">
+  <link rel="stylesheet" type="text/css" href="css/nav-styles.css">
+  <link rel="stylesheet" type="text/css" href="css/index-styles.css">
+  <link rel="stylesheet" type="text/css" href="css/show-styles.css">
+  <link rel="stylesheet" type="text/css" href="css/footer-styles.css">
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-  <nav class="container-fluid" id="nav-wrapper">
-    <!-- Notice Bar -->
-    <div class="container-fluid" id="notice-bar-container">
-      <p><strong>Latest addition</strong>: Super Robot Red Baron</p>
-    </div>
-    <!-- Logo and nav links -->
-    <div class="container-fluid row" id="nav-bar-container">
-      <div class="col-md-4" id="logo-container">
-        <h1><strong>Roboto</h1>
+  <section id="body-white">
+    <nav class="container-fluid" id="nav-wrapper">
+      <!-- Notice and Account -->
+      <div class="container-fluid row" id="notice-bar-container">
+        <div class="col-md-6 col-xs-6" id="notice-container">
+          <p><strong>Latest arrival</strong>: Big Dog</p>
+        </div>
+        <div class="col-md-6 col-xs-6" id="account-container">
+          <p>New to Roboto? <strong>Sign up</strong>.</p>
+        </div>
       </div>
-      <div class="col-med-8" id="nav-option-container">
-        <p><a data-ui-sref="robotIndex">Warehouse</a></p>
-        <p>Search</p>
-        <p>Location</p>
+      <!-- Logo and nav links -->
+      <div class="container-fluid row" id="nav-bar-container">
+        <div class="col-md-4 col-xs-4" id="logo-container">
+          <a data-ui-sref="robotIndex"><img src="img/roboto-logo.png" /></a>
+        </div>
+        <div class="col-med-8 col-xs-8" id="nav-options-container">
+          <p><a data-ui-sref="robotIndex">WAREHOUSE</a></p>
+          <div class="nav-rule"></div>
+          <p>SEARCH</p>
+          <div class="nav-rule"></div>
+          <p>CONTACT</p>
+          <div class="nav-rule"></div>
+          <p>CAREERS</p>
+        </div>
       </div>
-    </div>
-  </nav>
-  <main data-ui-view class="container"></main>
+    </nav>
+    <!-- Angular Main -->
+    <main data-ui-view></main>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Roboto</p>
+  </footer>
 
   <!-- Require CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -41,5 +62,6 @@
   <script src="./js/robots/robots.js"></script>
   <script src="./js/robots/robot.factory.js"></script>
   <script src="./js/robots/index.controller.js"></script>
+  <script src="./js/robots/show.controller.js"></script>
 </body>
 </html>

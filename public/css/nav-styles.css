@@ -1,0 +1,68 @@
+/**************************************************
+Navbar
+**************************************************/
+
+/* Nav Wrapper */
+#nav-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+/* Notice Bar */
+#notice-bar-container {
+  height: 4em;
+  background-color: #f3f3f3;
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+#notice-bar-container p {
+  padding-top: 1.65em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .85em;
+  color: #666;
+}
+
+#account-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/*#account-container p {
+  color: black;
+}*/
+
+/* Nav Bar */
+#nav-bar-container {
+  display: flex;
+  height: 7em;
+  padding-top: 1.6em;
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+#logo-container img {
+  width: 24em;
+}
+
+#nav-options-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 2em;
+}
+
+#nav-options-container p {
+  margin-left: 1em;
+  padding-left: 1em;
+  font-size: .7em;
+  letter-spacing: .125em;
+  font-weight: 700;
+}
+
+.nav-rule {
+  margin-left: 1.2em;
+  height: 2.5em;
+  border-right: .1em solid black;
+}

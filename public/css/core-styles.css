@@ -1,0 +1,30 @@
+/**************************************************
+Core Styles
+**************************************************/
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2E2E2E;
+}
+
+#body-white {
+  background-color: white;
+  padding-bottom: 10em;
+}
+
+/**************************************************
+Main Fonts
+**************************************************/
+
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: red;
+}

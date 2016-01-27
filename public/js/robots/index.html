@@ -1,6 +1,10 @@
-<div data-ng-repeat="robot in RobotIndexViewModel.robots">
-  <p><strong>Type: </strong>{{robot.type}}</p>
-  <p><strong>Class: </strong>{{robot.class}}</p>
-  <p><strong>Manufacturer: </strong>{{robot.manufacturer}}</p>
-  <p><strong>Name: </strong>{{robot.name}}</p>
-</div>
+<div class="container-fluid" id="jumbo-image"></div>
+
+<section class="container robot-index-container">
+  <div data-ng-repeat="robot in RobotIndexViewModel.robots">
+    <div class="robot">
+      <p><a data-ui-sref="robotShow({id: robot.id})"><strong>Name: </strong>{{robot.name}}</a></p>
+      <p><strong>Manufacturer: </strong>{{robot.manufacturer}}</p>
+    </div>
+  </div>
+</section>

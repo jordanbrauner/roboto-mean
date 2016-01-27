@@ -1,0 +1,41 @@
+<div id="jumbo-image" class="shadow"></div>
+
+<div class="row">
+  <div class="col-md-8 col-xs-8">
+    <div id="robot-splash-container">
+      <h3 id="robot-name">{{RobotShowViewModel.robot.name}}</h3>
+      <h4 id="robot-tagline">{{RobotShowViewModel.robot.tagline}}</h4>
+    </div>
+    <div id="robot-left-container">
+      <p id="robot-bio">{{RobotShowViewModel.robot.bio}}</p>
+      <p class="robot-subtitle">// IN THE FIELD</p>
+    </div>
+  </div>
+  <div class="col-md-4 col-xs-4">
+    <div id="statistics-container">
+      <p class="robot-subtitle">// STATISTICS</p>
+      <p>Power: {{RobotShowViewModel.robot.statistics.power}}</p>
+      <p>Energy: {{RobotShowViewModel.robot.statistics.energy}}</p>
+      <p>Agility: {{RobotShowViewModel.robot.statistics.agility}}</p>
+      <p>Armor: {{RobotShowViewModel.robot.statistics.armor}}</p>
+    </div>
+    <div id="history-container">
+      <p class="robot-subtitle">// HISTORY</p>
+      <p><strong>Class: </strong>{{RobotShowViewModel.robot.rClass}}</p>
+      <p><strong>Manufacturer: </strong>{{RobotShowViewModel.robot.manufacturer}}</p>
+      <p><strong>Name: </strong>{{RobotShowViewModel.robot.name}}</p>
+    </div>
+    <div id="pilots-container">
+      <p class="robot-subtitle">// PILOTS</p>
+        <p><strong>Kimiko Satsumi</strong></p>
+        <p>Nationality: Japan</p>
+        <p>Battles: 8</p>
+
+        <p><strong>Jonathon Ritz</strong></p>
+        <p>Nationality: USA</p>
+        <p>Battles: 6</p>
+
+    </div>
+  </div>
+
+</div>
