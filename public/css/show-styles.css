@@ -2,8 +2,6 @@
   height: 50em;
   width: 100%;
   background-image: url("/img/gundam-1.jpg");
-  /*background-image: url("/img/big-dog-1.jpg");*/
-  /*background-image: url("/img/petman-1.jpg");*/
   background-size: cover;
   background-color: lightgray;
 }

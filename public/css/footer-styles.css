@@ -1,5 +1,64 @@
 footer {
-  margin-top: 10em;
-  height: 30em;
+  height: 15em;
+  max-width: 88em;
+  margin: 0 auto;
   background-color: #2E2E2E;
+  color: #808080;
+}
+
+footer a {
+  color: #808080;
+}
+
+footer a:hover {
+  color: white;
+}
+
+#footer-container {
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+#footer-rule {
+  padding-top: 4em;
+  border-bottom: 1px solid #808080;
+  margin-bottom: 3em;
+}
+
+footer .row div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 2em;
+}
+
+footer .row div p {
+  margin-left: 1em;
+  padding-left: 1em;
+  font-size: .7em;
+  letter-spacing: .125em;
+  font-weight: 700;
+}
+
+#footer-left {
+  display: relative;
+  top: -1em;
+}
+#footer-left > p {
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+#footer-left img {
+  width: 9em;
+}
+
+#footer-right {
+}
+
+.footer-rule {
+  margin-left: 1.2em;
+  height: 2.5em;
+  border-right: .1em solid #808080;
 }

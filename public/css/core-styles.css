@@ -8,12 +8,23 @@ html, body {
 }
 
 body {
-  background-color: #2E2E2E;
+  background-color: #525659;
+  /*background-color: black;*/
+}
+
+#body-white, footer {
+  max-width: 88em;
+  margin: 0 auto;
+  /*box-shadow: 0em 0em 20em 1em #666;*/
 }
 
 #body-white {
   background-color: white;
   padding-bottom: 10em;
+}
+
+main {
+  padding-bottom: 7em;
 }
 
 /**************************************************

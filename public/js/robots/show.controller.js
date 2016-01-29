@@ -10,7 +10,6 @@
     ]);
 
   function ControllerFunction(RobotFactory, $stateParams) {
-    // console.log(RobotFactory.get({ id: $stateParams.id }));
     this.robot = RobotFactory.get({ id: $stateParams.id });
   }
 

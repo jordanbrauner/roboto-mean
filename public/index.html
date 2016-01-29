@@ -18,12 +18,14 @@
   <section id="body-white">
     <nav class="container-fluid" id="nav-wrapper">
       <!-- Notice and Account -->
-      <div class="container-fluid row" id="notice-bar-container">
-        <div class="col-md-6 col-xs-6" id="notice-container">
-          <p><strong>Latest arrival</strong>: Big Dog</p>
-        </div>
-        <div class="col-md-6 col-xs-6" id="account-container">
-          <p>New to Roboto? <strong>Sign up</strong>.</p>
+      <div class="container-fluid" id="notice-bar-container">
+        <div class="row">
+          <div class="col-md-6 col-xs-6" id="notice-container">
+            <p><strong>Latest arrival</strong>: Big Dog</p>
+          </div>
+          <div class="col-md-6 col-xs-6" id="account-container">
+            <p>New to Roboto? <strong>Sign up</strong>.</p>
+          </div>
         </div>
       </div>
       <!-- Logo and nav links -->
@@ -48,7 +50,22 @@
 
   <!-- Footer -->
   <footer>
-    <p>Roboto</p>
+    <div id="footer-rule"></div>
+    <div class="row" id="footer-container">
+      <div class="col-md-4 col-xs-4" id="footer-left">
+        <img src="/img/roboto-logo-footer.png">
+        <p>&copy; Copyright 2028-72</p>
+      </div>
+      <div class="col-md-8 col-xs-8" id="footer-right">
+        <p><a data-ui-sref="robotIndex">WAREHOUSE</a></p>
+        <div class="footer-rule"></div>
+        <p>SEARCH</p>
+        <div class="footer-rule"></div>
+        <p>CONTACT</p>
+        <div class="footer-rule"></div>
+        <p>CAREERS</p>
+      </div>
+    </div>
   </footer>
 
   <!-- Require CDN -->
