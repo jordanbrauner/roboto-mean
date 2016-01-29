@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Roboto</title>
+
   <!-- Require scripts -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/core-styles.css">
@@ -11,12 +12,16 @@
   <link rel="stylesheet" type="text/css" href="css/index-styles.css">
   <link rel="stylesheet" type="text/css" href="css/show-styles.css">
   <link rel="stylesheet" type="text/css" href="css/footer-styles.css">
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,300italic,400italic,800italic,700italic|Open+Sans+Condensed:300,700,300italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-  <section id="body-white">
+  <!-- Body White section that gives a white background color to separate it from the HTML's body background -->
+  <section id="white-bg">
+
+    <!-- Container for Nav Bar -->
     <nav class="container-fluid" id="nav-wrapper">
+
       <!-- Notice and Account -->
       <div class="container-fluid" id="notice-bar-container">
         <div class="row">
@@ -24,10 +29,11 @@
             <p><strong>Latest arrival</strong>: Big Dog</p>
           </div>
           <div class="col-md-6 col-xs-6" id="account-container">
-            <p>New to Roboto? <strong>Sign up</strong>.</p>
+            <p>New to Roboto? <strong><a data-ui-sref="robotIndex">Sign up</a></strong>.</p>
           </div>
         </div>
       </div>
+
       <!-- Logo and nav links -->
       <div class="container-fluid row" id="nav-bar-container">
         <div class="col-md-4 col-xs-4" id="logo-container">
@@ -44,6 +50,7 @@
         </div>
       </div>
     </nav>
+
     <!-- Angular Main -->
     <main data-ui-view></main>
   </section>
@@ -52,11 +59,15 @@
   <footer>
     <div id="footer-rule"></div>
     <div class="row" id="footer-container">
-      <div class="col-md-4 col-xs-4" id="footer-left">
+
+      <!-- Left side of footer containing logo and copyright -->
+      <div class="col-md-5 col-xs-5" id="footer-left">
         <img src="/img/roboto-logo-footer.png">
         <p>&copy; Copyright 2028-72</p>
       </div>
-      <div class="col-md-8 col-xs-8" id="footer-right">
+
+      <!-- Right side of footer container containing nav links -->
+      <div class="col-md-7 col-xs-7" id="footer-right">
         <p><a data-ui-sref="robotIndex">WAREHOUSE</a></p>
         <div class="footer-rule"></div>
         <p>SEARCH</p>
@@ -74,6 +85,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.17/angular-ui-router.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
   <!-- Require Files -->
   <script src="./js/app.js"></script>
   <script src="./js/robots/robots.js"></script>

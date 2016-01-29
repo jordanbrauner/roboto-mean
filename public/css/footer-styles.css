@@ -6,8 +6,9 @@ footer {
   color: #808080;
 }
 
-footer a {
+footer a, footer a:visited, footer a:active, footer a:hover {
   color: #808080;
+  text-decoration: none;
 }
 
 footer a:hover {
@@ -25,13 +26,6 @@ footer a:hover {
   margin-bottom: 3em;
 }
 
-footer .row div {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding-bottom: 2em;
-}
-
 footer .row div p {
   margin-left: 1em;
   padding-left: 1em;
@@ -43,18 +37,31 @@ footer .row div p {
 #footer-left {
   display: relative;
   top: -1em;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-strart;
+  align-items: flex-start;
 }
+
 #footer-left > p {
-  margin-bottom: 2em;
+  display: flex;
+  align-self: center;
   text-transform: uppercase;
   font-weight: 200;
+  margin-top: 1.4em;
 }
 
 #footer-left img {
+  display: flex;
+  align-self: center;
   width: 9em;
+  margin-top: .4em;
 }
 
 #footer-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .footer-rule {

@@ -1,3 +1,8 @@
+/**************************************************
+SHOW
+**************************************************/
+
+/* Main Image */
 #jumbo-image {
   height: 50em;
   width: 100%;
@@ -10,7 +15,11 @@
   box-shadow: inset 0 0 13em #000;
 }
 
-/* Padding for all main content aligned left */
+/* Content Container */
+#show-container {
+  padding-bottom: 5em;
+}
+
 #robot-splash-container, #robot-left-container {
   padding-left: 6em;
   padding-right: 4em;
@@ -29,21 +38,26 @@
 }
 
 #robot-splash-text h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2.8em;
+  font-weight: 600;
+  letter-spacing: .05em;
   padding-top: -5em;
-  font-size: 2.5em;
   color: white;
   margin-right: 1em;
 }
 
 #robot-splash-text h4 {
+  font-weight: 400;
   color: white;
-  padding-top: .9em;
+  padding-top: 1.2em;
   text-transform: uppercase;
   font-size: .75em;
   font-weight: 200;
   letter-spacing: .7em
 }
 
+/* Bio and Gallery */
 #robot-left-container {
   padding-top: 3em;
 }
@@ -66,3 +80,89 @@
   background-color: #BBB;
   margin-right: 1em;
 }
+
+/* Statistics */
+
+#right-content-container {
+  padding: 1em 3em;
+
+}
+
+#statistics-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.title-rule {
+  width: 30%;
+  height: 1%;
+  border-top: 1px solid black;
+}
+
+.title-box {
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: .4em;
+  width: 8.5em;
+  height: 3.65em;
+  background-color: black;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 12px solid white;
+}
+
+#statistics-info-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+
+.statistics-circle {
+  min-width: 4.5em;
+  max-width: 4.5em;
+  min-height: 4.5em;
+  max-height: 4.5em;
+  border: 1.5px solid black;
+  border-radius: 360px;
+  text-align: center;
+}
+
+.statistics-circle h4 {
+  margin-top: .165em;
+  padding-left: .55em;
+  display: flex;
+  align-self: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 2.75em;
+}
+
+.statistics-circle p {
+  padding-top: 1em;
+  /*padding-left: .55em;*/
+  /*display: flex;
+  align-self: center;*/
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: .75em;
+  color: #808080;
+  text-transform: uppercase;
+}
+
+/**************************************************
+CONTRIBUTIONS
+**************************************************/
+
+#contributions-container {
+  background-color: black;
+  height: 40em;
+}
+
+/**************************************************
+MORE ROBOTS
+**************************************************/
