@@ -1,11 +1,10 @@
-(function () {
+(function() {
   "use strict";
 
   angular
     .module("robots")
-    .controller("RobotShowController", [
+    .controller("RobotEditController", [
       "RobotFactory",
-      // "CompanyFactory",
       "$stateParams",
       ControllerFunction
     ]);

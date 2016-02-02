@@ -1,7 +1,9 @@
 var mongoose = require("mongoose");
 var schema = require("./schema");
 var Robot = require("../models/robot");
+var Company = require("../models/company");
 var robotData = require("./robot_data.json");
+var companyData = require("./company_data.json");
 
 mongoose.connect("mongodb://" + (process.env.MONGODB_URL_RW || "localhost/robotwarehouse"));
 var db = mongoose.connection;
@@ -17,6 +19,13 @@ db.once("open", function() {
   Robot.remove({}).then(function() {
     forEach(robotData, function(robotDatum) {
       return new Robot(robotDatum).save();
+    }).then(function() {
+      process.exit();
+    });
+  });
+  Company.remove({}).then(function() {
+    forEach(companyData, function(companyDatum) {
+      return new Company(companyDatum).save();
     }).then(function() {
       process.exit();
     });
