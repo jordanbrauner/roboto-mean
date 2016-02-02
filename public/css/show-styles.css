@@ -6,7 +6,8 @@ SHOW
 #jumbo-image {
   height: 50em;
   width: 100%;
-  background-image: url("/img/gundam-1.jpg");
+  background-image: url("/img/gallery/gundam-1.jpg");
+  /*background-image: url("/img/gallery/petman-1.jpg");*/
   background-size: cover;
   background-color: lightgray;
 }
@@ -69,8 +70,6 @@ SHOW
 }
 
 #robot-gallery-container {
-  border-top: .1em solid black;
-  padding-top: 2em;
   display: flex;
 }
 
@@ -82,21 +81,19 @@ SHOW
 }
 
 /* Statistics */
-
 #right-content-container {
+  margin-top: 2em;
   padding: 1em 3em;
-
 }
 
 #statistics-title {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
 }
 
 .title-rule {
-  width: 30%;
+  width: 33%;
   height: 1%;
   border-top: 1px solid black;
 }
@@ -117,41 +114,64 @@ SHOW
 }
 
 #statistics-info-container {
+  margin-top: 1.5em;
   display: flex;
   justify-content: space-between;
   margin-bottom: 5em;
 }
 
 .statistics-circle {
-  min-width: 4.5em;
-  max-width: 4.5em;
-  min-height: 4.5em;
-  max-height: 4.5em;
+  min-width: 4.75em;
+  max-width: 4.75em;
+  min-height: 4.75em;
+  max-height: 4.75em;
   border: 1.5px solid black;
   border-radius: 360px;
   text-align: center;
 }
 
 .statistics-circle h4 {
-  margin-top: .165em;
-  padding-left: .55em;
+  padding-top: .085em;
+  padding-left: .65em;
   display: flex;
   align-self: center;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
-  font-size: 2.75em;
+  font-size: 2.55em;
 }
 
 .statistics-circle p {
   padding-top: 1em;
-  /*padding-left: .55em;*/
-  /*display: flex;
-  align-self: center;*/
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: .75em;
   color: #808080;
   text-transform: uppercase;
+}
+
+/* Bottom section (History, Pilots) */
+
+#statistics-bottom-container {
+  display: flex;
+}
+
+#statistics-bottom-container p {
+  font-size: .9em;
+}
+
+.robot-subtitle {
+  padding-bottom: .7em;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid black;
+}
+
+#history-container {
+  width: 45%;
+  margin-right: 10%;
+}
+
+#pilots-container {
+  width: 45%;
 }
 
 /**************************************************

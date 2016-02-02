@@ -22,14 +22,15 @@
       <!-- Gallery -->
       <p class="robot-subtitle">// IN THE FIELD</p>
       <div id="robot-gallery-container">
-        <div class="placeholder-image"></div>
-        <div class="placeholder-image"></div>
-        <div class="placeholder-image"></div>
-        <div class="placeholder-image"></div>
-        <div class="placeholder-image"></div>
+        <img src="img/gallery/gundam-2.jpg" class="placeholder-image" />
+        <img src="img/gallery/gundam-3.jpg" class="placeholder-image" />
+        <img src="img/gallery/gundam-4.jpg" class="placeholder-image" />
+        <img src="img/gallery/gundam-5.jpg" class="placeholder-image" />
+        <img src="img/gallery/gundam-6.jpg" class="placeholder-image" />
       </div>
     </div>
   </div>
+
   <!-- Right content container (Statistics, History, Pilots) -->
   <div class="col-md-5 col-xs-5">
     <div id="right-content-container">
@@ -61,32 +62,40 @@
         </div>
       </div>
 
-      <!-- Statistics -->
-      <div id="history-container">
-        <p class="robot-subtitle">// HISTORY</p>
-        <p><strong>Class: </strong>{{RobotShowViewModel.robot.rClass}}</p>
-        <p><strong>Manufacturer: </strong>{{RobotShowViewModel.robot.manufacturer}}</p>
-        <p><strong>Name: </strong>{{RobotShowViewModel.robot.name}}</p>
-      </div>
+      <!-- Bottom right section of robot stats -->
+      <div id="statistics-bottom-container">
+        <!-- History -->
+        <div id="history-container">
+          <p class="robot-subtitle">// HISTORY</p>
+          <p>Class: <strong>{{RobotShowViewModel.robot.rClass}}</strong></p>
+          <p>Manufacturer: <strong>{{RobotShowViewModel.robot.manufacturer}}</strong></p>
+          <p>Name: <strong>{{RobotShowViewModel.robot.name}}</strong></p>
+        </div>
 
-      <!-- Pilots -->
-      <div id="pilots-container">
-        <p class="robot-subtitle">// PILOTS</p>
-          <p><strong>Kimiko Satsumi</strong></p>
-          <p>Nationality: Japan</p>
-          <p>Battles: 8</p>
-          <p><strong>Jonathon Ritz</strong></p>
-          <p>Nationality: USA</p>
-          <p>Battles: 6</p>
+        <!-- Pilots -->
+        <div id="pilots-container">
+          <div>
+            <p class="robot-subtitle">// PILOTS</p>
+            <p><strong>Kimiko Satsumi</strong></p>
+            <p>Nationality: Japan</p>
+            <p>Battles: 8</p>
+          </div>
+          <div>
+            <p><strong>Jonathon Ritz</strong></p>
+            <p>Nationality: USA</p>
+            <p>Battles: 6</p>
+          </div>
+        </div>
       </div>
+      <!-- END: History and Pilots container  -->
 
 
     </div>
   </div>
-  <!-- End of right content container and its container -->
+  <!-- END: Right content container and its container -->
 
 </div>
-<!-- End of show container -->
+<!-- END: Show container -->
 
 <!-- Right content container (Statistics, History, Pilots) -->
 <div id="contributions-container" class="container-fluid"></div>
