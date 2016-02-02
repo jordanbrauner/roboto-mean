@@ -2,14 +2,14 @@
   "use strict";
 
   angular
-    .module("companies")
-    .factory("CompanyFactory", [
+    .module("corporations")
+    .factory("CorporationFactory", [
       "$resource",
       FactoryFunction
     ]);
 
   function FactoryFunction($resource) {
-    return $resource("http://localhost:4000/companydata/:id");
+    return $resource("http://localhost:4000/corporationdata/:id");
   }
 
 })();

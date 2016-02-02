@@ -1,8 +1,42 @@
-<h2>New Robot</h2>
+<div class="form-container">
+  <h3>What corporation are you with?</h3>
+  <form>
+    <input placeholder="Name of Corporation" data-ng-model="RobotNewViewModel.robot.corporation" />
+    <button type="button" data-ng-click="">Submit</button>
+    <br />
+  </form>
 
-<robot-form data-robot="RobotNewViewModel.robot"></robot-form>
+  <form>
+    <h3>{{RobotNewViewModel.robot.corporation}}</h3>
+    <p>Tell us about your robot:</p>
+    <input placeholder="Name" data-ng-model="RobotNewViewModel.robot.name">
+    <input placeholder="Tagline" data-ng-model="RobotNewViewModel.robot.tagline">
+    <textarea placeholder="Bio" data-ng-model="RobotNewViewModel.robot.bio"></textarea>
+    <input placeholder="Country" data-ng-model="RobotNewViewModel.robot.country">
+    <input placeholder="Class" data-ng-model="RobotNewViewModel.robot.rClass">
+    <input placeholder="Year Built" data-ng-model="RobotNewViewModel.robot.year">
+    <p>WRA Rating <span><em>(1 – 10)</em></span></p>
+    <div id="wra-rating">
+      <input placeholder="Power" data-ng-model="RobotNewViewModel.robot.statistics.power">
+      <input placeholder="Energy" data-ng-model="RobotNewViewModel.robot.statistics.energy">
+      <input placeholder="Agility" data-ng-model="RobotNewViewModel.robot.statistics.agility">
+      <input placeholder="Armor" data-ng-model="RobotNewViewModel.robot.statistics.armor">
+    </div>
+    <div id="form-pilot">
+      <div>
+        <p>Left Brain Pilot</p>
+        <input placeholder="Name" data-ng-model="RobotNewViewModel.robot.pilots.name">
+        <input placeholder="Nationality" data-ng-model="RobotNewViewModel.robot.pilots.nationality">
+        <input placeholder="Battles Won" data-ng-model="RobotNewViewModel.robot.pilots.battles">
+      </div>
 
-<br />
-<br />
-<br />
-<br />
+      <div>
+        <p>Right Brain Pilot</p>
+        <input placeholder="Name" data-ng-model="RobotNewViewModel.robot.pilots.name">
+        <input placeholder="Nationality" data-ng-model="RobotNewViewModel.robot.pilots.nationality">
+        <input placeholder="Battles Won" data-ng-model="RobotNewViewModel.robot.pilots.battles">
+      </div>
+    </div>
+    <button type="button" data-ng-click='RobotNewViewModel.create()'>Create</button>
+  </form>
+</div>

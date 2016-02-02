@@ -64,12 +64,12 @@ Middle Section
   font-weight: 700;
 }
 
-#about-company, #top-contributions, #recent-contributions {
+#about-corporation, #top-contributions, #recent-contributions {
   width: 26%;
   text-align: left;
 }
 
-#about-company div {
+#about-corporation div {
   font-size: .85em;
   line-height: 1.8em;
 }

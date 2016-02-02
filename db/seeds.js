@@ -1,9 +1,9 @@
 var mongoose = require("mongoose");
 var schema = require("./schema");
 var Robot = require("../models/robot");
-var Company = require("../models/company");
+var Corporation = require("../models/corporation");
 var robotData = require("./robot_data.json");
-var companyData = require("./company_data.json");
+var corporationData = require("./corporation_data.json");
 
 mongoose.connect("mongodb://" + (process.env.MONGODB_URL_RW || "localhost/robotwarehouse"));
 var db = mongoose.connection;
@@ -23,9 +23,9 @@ db.once("open", function() {
       process.exit();
     });
   });
-  Company.remove({}).then(function() {
-    forEach(companyData, function(companyDatum) {
-      return new Company(companyDatum).save();
+  Corporation.remove({}).then(function() {
+    forEach(corporationData, function(corporationDatum) {
+      return new Corporation(corporationDatum).save();
     }).then(function() {
       process.exit();
     });

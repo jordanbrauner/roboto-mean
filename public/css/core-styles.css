@@ -2,7 +2,6 @@
 Core Styles
 **************************************************/
 
-
 html, body {
   margin: 0;
   padding: 0;
@@ -10,10 +9,10 @@ html, body {
 
 body {
   /*background-color: #525659;*/
-  background-color: #fff;
-  /*background-image: url('/img/design-elements/hex-bg.png');*/
-  /*background-repeat: repeat;*/
-  /*background-size: 8em;*/
+  /*background-color: #eee;*/
+  /*background-image: url('/img/design-elements/hex-bg.png');
+  background-repeat: repeat;
+  background-size: 9em;*/
 }
 
 #white-bg, footer {

@@ -9,7 +9,7 @@ var RobotSchema = new Schema(
     name: String,
     tagline: String,
     bio: String,
-    company: String,
+    corporation: String,
     country: String,
     rClass: String,
     year: String,
@@ -20,13 +20,18 @@ var RobotSchema = new Schema(
       agility: Number,
       armor: Number
     },
-    pilots: [
-      {
+    pilots: {
+      left: {
+        name: String,
+        nationality: String,
+        battles: Number
+      },
+      right: {
         name: String,
         nationality: String,
         battles: Number
       }
-    ],
+    },
     contributions: [
       {
         goal: Number,
@@ -40,8 +45,8 @@ var RobotSchema = new Schema(
   }
 );
 
-// Company Schema
-var CompanySchema = new Schema(
+// Corporation Schema
+var CorporationSchema = new Schema(
   {
     name: String,
     bio: String
@@ -56,9 +61,9 @@ RobotSchema.virtual("id").get(function() {
   return this._id;
 });
 
-CompanySchema.virtual("id").get(function() {
+CorporationSchema.virtual("id").get(function() {
   return this._id;
 });
 
 var RobotModel = mongoose.model("Robot", RobotSchema);
-var CompanyModel = mongoose.model("Company", CompanySchema);
+var CorporationModel = mongoose.model("Corporation", CorporationSchema);

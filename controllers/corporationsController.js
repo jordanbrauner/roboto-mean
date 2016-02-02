@@ -1,6 +1,6 @@
 var express = require("express");
 var router = express.Router();
-var Company = require("../models/company");
+var Corporation = require("../models/corporation");
 
 function error(response, message) {
   response.status(500);
@@ -8,13 +8,13 @@ function error(response, message) {
 }
 
 router.get("/", function(req, res) {
-  Company.find({}).then(function(results) {
+  Corporation.find({}).then(function(results) {
     res.json(results);
   });
 });
 
 router.get("/:id", function(req, res) {
-  Company.findById(req.params.id).then(function(results) {
+  Corporation.findById(req.params.id).then(function(results) {
     res.json(results);
   });
 });

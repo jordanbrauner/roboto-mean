@@ -3,7 +3,7 @@ require("../db/schema");
 var mongoose = require("mongoose");
 
 // DEFINE
-var CompanyModel = mongoose.model("Company");
+var CorporationModel = mongoose.model("Corporation");
 
 // EXPORT
-module.exports = CompanyModel;
+module.exports = CorporationModel;

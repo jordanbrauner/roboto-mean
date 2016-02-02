@@ -1,12 +1,10 @@
 <div class="container-fluid shadow" id="jumbo-image"></div>
 
-<p><a data-ui-sref="robotNew">Add Your Robot</a></p>
-
 <section id="index-container" class="container">
   <div data-ng-repeat="robot in RobotIndexViewModel.robots">
     <div class="robot">
-      <p><a data-ui-sref="robotShow({id: robot.id})"><strong>Name: </strong>{{robot.name}}</a></p>
-      <p><strong>Manufacturer: </strong>{{robot.manufacturer}}</p>
+      <p><a data-ui-sref="robotShow({id: robot.id})"<strong>Name: </strong>{{robot.name}}</p>
+      <p><strong>Corporation: </strong>{{robot.corporation}}</p>
     </div>
   </div>
 </section>

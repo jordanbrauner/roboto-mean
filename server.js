@@ -7,7 +7,7 @@ var morgan = require("morgan");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
 var robotsController = require("./controllers/robotsController");
-var companiesController = require("./controllers/companiesController");
+var corporationsController = require("./controllers/corporationsController");
 
 
 // CONFIGURE MONGOOSE
@@ -36,11 +36,12 @@ app.use(express.static(__dirname + '/public'));
 // app.use(routes);
 
 app.use("/robotdata", robotsController);
-app.use("/companydata", companiesController);
+app.use("/corporationdata", corporationsController);
 
-app.get("/", function(req, res) {
-  res.render("index");
-});
+// TODO Why doesn't this work?
+// app.get("/", function(req, res) {
+//   res.render("index");
+// });
 
 // RUN
 app.listen(process.env.PORT || 4000, function() {

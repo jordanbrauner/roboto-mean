@@ -66,24 +66,28 @@
       <div id="statistics-bottom-container">
         <!-- History -->
         <div id="history-container">
-          <p class="robot-subtitle">// HISTORY</p>
-          <p>Class: <strong>{{RobotShowViewModel.robot.rClass}}</strong></p>
-          <p>Manufacturer: <strong>{{RobotShowViewModel.robot.company}}</strong></p>
+          <h4 class="robot-subtitle">// HISTORY</h4>
           <p>Name: <strong>{{RobotShowViewModel.robot.name}}</strong></p>
+          <p>Manufacturer: <strong>{{RobotShowViewModel.robot.corporation}}</strong></p>
+          <p>Country: <strong>{{RobotShowViewModel.robot.country}}</strong></p>
+          <p>Class: <strong>{{RobotShowViewModel.robot.rClass}}</strong></p>
+          <p>Year: <strong>{{RobotShowViewModel.robot.year}}</strong></p>
         </div>
 
         <!-- Pilots -->
         <div id="pilots-container">
-          <p class="robot-subtitle">// PILOTS</p>
+          <h4 class="robot-subtitle">// PILOTS</h4>
           <div>
-            <p><strong>KIMIKO SATSUMI</strong></p>
-            <p>Nationality: Japan</p>
-            <p>Battles: 8</p>
+            <!-- <p class="brain-pilot">Left Brain</p> -->
+            <p><strong>{{RobotShowViewModel.robot.pilots.left.name}}</strong></p>
+            <p>Nationality: {{RobotShowViewModel.robot.pilots.left.nationality}}</p>
+            <p>Battles won: {{RobotShowViewModel.robot.pilots.left.battles}}</p>
           </div>
           <div>
-            <p><strong>JONATHON RITZ</strong></p>
-            <p>Nationality: USA</p>
-            <p>Battles: 6</p>
+            <!-- <p class="brain-pilot">Right Brain</p> -->
+            <p><strong>{{RobotShowViewModel.robot.pilots.right.name}}</strong></p>
+            <p>Nationality: {{RobotShowViewModel.robot.pilots.right.nationality}}</p>
+            <p>Battles won: {{RobotShowViewModel.robot.pilots.right.battles}}</p>
             <p><a data-ui-sref="robotEdit({id: RobotShowViewModel.robot.id})">Edit Robot Data</a></p>
           </div>
         </div>

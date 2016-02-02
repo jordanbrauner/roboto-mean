@@ -3,7 +3,7 @@
     "name": "RX-78-2",
     "tagline": "Taking Japan by Storm",
     "bio": "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que.",
-    "company": "Orbitech",
+    "corporation": "Orbitech",
     "country": "Japan",
     "rClass": "AA",
     "year": "2032",
@@ -14,25 +14,25 @@
       "agility": "8",
       "armor": "9"
     },
-    "pilots": [
-      {
+    "pilots": {
+      "left": {
         "name": "Kimiko Satsumi",
         "nationality": "Japan",
         "battles": "8"
       },
-      {
+      "right": {
         "name": "Jonathon Ritz",
         "nationality": "United States",
         "battles": "4"
       }
-    ],
+    },
     "contributions": []
   },
   {
     "name": "BigDog",
     "tagline": "Rough-Terrain Robot",
     "bio": "BigDog is a rough-terrain robot that walks, runs, climbs and carries heavy loads. BigDog is powered by an engine that drives a hydraulic actuation system. BigDog has four legs that are articulated like an animal’s, with compliant elements to absorb shock and recycle energy from one step to the next. BigDog is the size of a large dog or small mule; about 3 feet long, 2.5 feet tall and weighs 240 lbs. BigDog's on-board computer controls locomotion, processes sensors and handles communications with the user. BigDog’s control system keeps it balanced, manages locomotion on a wide variety of terrains.",
-    "company": "Boston Dynamics",
+    "corporation": "Boston Dynamics",
     "country": "USA",
     "rClass": "D",
     "year": "2017",
@@ -43,25 +43,25 @@
       "agility": "3",
       "armor": "7"
     },
-    "pilots": [
-      {
+    "pilots": {
+      "left": {
         "name": "Kimiko Satsumi",
         "nationality": "Japan",
         "battles": "8"
       },
-      {
+      "right": {
         "name": "Jonathon Ritz",
         "nationality": "United States",
         "battles": "4"
       }
-    ],
+    },
     "contributions": []
   },
   {
     "name": "PETMAN",
     "tagline": "The first anthropmorphic robot",
     "bio": "PETMAN is an anthropomorphic robot designed for testing chemical protection clothing. Natural agile movement is essential for PETMAN to simulate how a soldier stresses protective clothing under realistic conditions. Unlike previous suit testers that had a limited repertoire of motion and had to be supported mechanically, PETMAN balances itself and moves freely; walking, bending and doing a variety of suit-stressing calisthenics during exposure to chemical warfare agents. PETMAN also simulates human physiology within the protective suit by controlling temperature, humidity and sweating, all to provide realistic test conditions.",
-    "company": "Boston Dynamics",
+    "corporation": "Boston Dynamics",
     "country": "USA",
     "rClass": "D",
     "year": "2019",
@@ -72,25 +72,25 @@
       "agility": "3",
       "armor": "2"
     },
-    "pilots": [
-      {
+    "pilots": {
+      "left": {
         "name": "Kimiko Satsumi",
         "nationality": "Japan",
         "battles": "8"
       },
-      {
+      "right": {
         "name": "Jonathon Ritz",
         "nationality": "United States",
         "battles": "4"
       }
-    ],
+    },
     "contributions": []
   },
   {
     "name": "Andrew",
     "tagline": "Thinking, Feeling",
     "bio": "Seeing a whole fleet of Reaver ships coming at him, the Operative: Target the Reavers. Target the Reavers! Target everyone! Somebody fire! The Operative: There are a lot of innocent people being killed in the air right now. Capt. Malcolm Reynolds: You have no idea how true that is.",
-    "company": "Whedon Industries",
+    "corporation": "Whedon Industries",
     "country": "USA",
     "rClass": "B",
     "year": "2027",
@@ -101,18 +101,18 @@
       "agility": "9",
       "armor": "4"
     },
-    "pilots": [
-      {
+    "pilots": {
+      "left": {
         "name": "Kimiko Satsumi",
         "nationality": "Japan",
         "battles": "8"
       },
-      {
+      "right": {
         "name": "Jonathon Ritz",
         "nationality": "United States",
         "battles": "4"
       }
-    ],
+    },
     "contributions": []
   }
 ]
