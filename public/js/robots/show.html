@@ -1,17 +1,20 @@
 <!-- Main Image -->
 <div id="jumbo-image" class="shadow"></div>
 
+<!-- Name and tagline container -->
+<div id="robot-splash-container">
+  <div id="robot-splash-text">
+    <h3 id="robot-name">{{RobotShowViewModel.robot.name}}</h3>
+    <h4 id="robot-tagline">{{RobotShowViewModel.robot.tagline}}</h4>
+  </div>
+  <div id="splash-container-arrow">
+    <img src="/img/design-elements/box-arrow.png" />
+  </div>
+</div>
+
 <!-- Container for Robot Show -->
 <div class="row" id="show-container">
   <div class="col-md-7 col-xs-7">
-
-    <!-- Name and tagline container -->
-    <div id="robot-splash-container">
-      <div id="robot-splash-text">
-        <h3 id="robot-name">{{RobotShowViewModel.robot.name}}</h3>
-        <h4 id="robot-tagline">{{RobotShowViewModel.robot.tagline}}</h4>
-      </div>
-    </div>
 
     <!-- Left content container (Bio, Gallery) -->
     <div id="robot-left-container">
@@ -88,7 +91,6 @@
             <p><strong>{{RobotShowViewModel.robot.pilots.right.name}}</strong></p>
             <p>Nationality: {{RobotShowViewModel.robot.pilots.right.nationality}}</p>
             <p>Battles won: {{RobotShowViewModel.robot.pilots.right.battles}}</p>
-            <p><a data-ui-sref="robotEdit({id: RobotShowViewModel.robot.id})">Edit Robot Data</a></p>
           </div>
         </div>
       </div>

@@ -4,7 +4,8 @@ SHOW
 
 /* Main Image */
 #jumbo-image {
-  height: 50em;
+  /*height: 50em;*/
+  height: 44em;
   width: 100%;
   background-color: lightgray;
   background-size: cover;
@@ -22,21 +23,24 @@ SHOW
   padding-bottom: 5em;
 }
 
-#robot-splash-container, #robot-left-container {
-  padding-left: 6em;
-  padding-right: 4em;
-}
-
+/* Splash Info */
 #robot-splash-container {
   display: flex;
   justify-content: flex-start;
   height: 7em;
-  background-color: #000;
+}
+
+#robot-left-container {
+  padding-left: 6em;
+  padding-right: 4em;
 }
 
 #robot-splash-text {
+  padding-left: 6em;
+  width: 70%;
   display: flex;
   align-items: center;
+  background-color: #000;
 }
 
 #robot-splash-text h3 {
@@ -44,9 +48,9 @@ SHOW
   font-size: 2.8em;
   font-weight: 600;
   letter-spacing: .05em;
-  padding-top: -5em;
   color: white;
   margin-right: 1em;
+  text-transform: uppercase;
 }
 
 #robot-splash-text h4 {
@@ -59,9 +63,22 @@ SHOW
   letter-spacing: .7em
 }
 
+#splash-container-arrow {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-self: flex-end;
+}
+
+#splash-container-arrow img {
+  width: 2.5em;
+}
+
 /* Bio and Gallery */
 #robot-left-container {
-  padding-top: 3em;
+  margin-top: 3em;
+  border-right: .1em solid lightgray;
+  padding-bottom: 2em;
 }
 
 #robot-bio {
@@ -83,7 +100,7 @@ SHOW
 
 /* Statistics */
 #right-content-container {
-  margin-top: 2em;
+  margin-top: 1em;
   padding: 1em 3em;
 }
 
