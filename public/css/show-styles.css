@@ -170,17 +170,22 @@ SHOW
   margin-right: 10%;
 }
 
+#history-container p {
+  font-size: .9em;
+}
+
 #pilots-container {
   width: 45%;
 }
 
-/**************************************************
-CONTRIBUTIONS
-**************************************************/
+#pilots-container div {
+  margin-bottom: 1em;
+}
 
-#contributions-container {
-  background-color: black;
-  height: 40em;
+#pilots-container div p {
+  margin-bottom: .1em;
+  font-size: .9em;
+
 }
 
 /**************************************************
