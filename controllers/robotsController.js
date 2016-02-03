@@ -13,6 +13,10 @@ router.get("/", function(req, res) {
   });
 });
 
+router.post("/", function(req, res) {
+  console.log("This is the request: " + req.body);
+});
+
 router.get("/:id", function(req, res) {
   Robot.findById(req.params.id).then(function(results) {
     res.json(results);
