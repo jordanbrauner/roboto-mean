@@ -16,7 +16,7 @@ body {
 }
 
 #white-bg, footer {
-  max-width: 88em;
+  /*max-width: 88em;*/
   margin: 0 auto;
   /*box-shadow: 0em 0em 20em 1em #888;*/
   /*box-shadow: 0em 0em 20em 1em #666;*/
@@ -25,6 +25,7 @@ body {
 
 #white-bg {
   background-color: white;
+  min-height: 50em;
 }
 
 /**************************************************

@@ -11,11 +11,14 @@
   ]);
 
   function ControllerFunction(RobotFactory, $state, $stateParams) {
+    console.log("new.controller.js: ControllerFunction called to create new RobotFactory");
     this.robot = new RobotFactory();
     this.create = function() {
-      console.log("Create function called");
+      console.log("new.controller.js: Create function called.");
       this.robot.$save(function(response) {
-        console.log("This is the response: " + response);
+        for (var i in response) {
+          console.log("new.controller.js: This is the response to $save: " + response[i]);
+        }
         $state.go("robotIndex", {}, {reload: true});
       });
     };

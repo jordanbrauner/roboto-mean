@@ -14,6 +14,17 @@ SHOW
   /*background-image: url("/img/gallery/petman-1.jpg");*/
 }
 
+#jumbo-image-form {
+  /*height: 50em;*/
+  height: 30em;
+  width: 100%;
+  background-color: lightgray;
+  background-size: cover;
+  /*background-image: url("/img/gallery/jaegar-2.jpg");*/
+  background-image: url("/img/gallery/gundam-1.jpg");
+  /*background-image: url("/img/gallery/petman-1.jpg");*/
+}
+
 .shadow {
   box-shadow: inset 0 0 13em #000;
 }
@@ -82,7 +93,7 @@ SHOW
 }
 
 #robot-bio {
-  font-size: .9em;
+  font-size: .85em;
   line-height: 2em;
   margin-bottom: 5em;
 }
@@ -174,7 +185,7 @@ SHOW
 }
 
 #statistics-bottom-container p {
-  font-size: .9em;
+  font-size: .85em;
 }
 
 .robot-subtitle {
@@ -189,7 +200,7 @@ SHOW
 }
 
 #history-container p {
-  font-size: .9em;
+  font-size: .85em;
   margin-bottom: .3em;
 }
 
@@ -203,7 +214,7 @@ SHOW
 
 #pilots-container div p {
   margin-bottom: .3em;
-  font-size: .9em;
+  font-size: .85em;
 }
 
 
