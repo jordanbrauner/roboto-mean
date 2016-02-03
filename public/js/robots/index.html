@@ -1,10 +1,27 @@
-<div class="container-fluid shadow" id="jumbo-image"></div>
+<div class="container-fluid shadow" id="jumbo-image" data-ng-style="{'background-image': 'url(http://jordanbrauner.github.io/images/gallery/jaegar-1.jpg)'}"></div>
+
+<!-- Name and tagline container -->
+<div id="robot-splash-container">
+  <div id="robot-splash-text">
+    <h3 id="robot-name">Toro One</h3>
+    <h4 id="robot-tagline">Coming December 2120</h4>
+  </div>
+  <div id="splash-container-arrow">
+    <img src="/img/design-elements/box-arrow.png" />
+  </div>
+</div>
+
+<div id="warehouse-title">
+  <h3>The Warehouse</h3>
+</div>
 
 <section id="index-container" class="container">
   <div data-ng-repeat="robot in RobotIndexViewModel.robots">
-    <div class="robot">
-      <p><a data-ui-sref="robotShow({id: robot.id})"<strong>Name: </strong>{{robot.name}}</p>
-      <p><strong>Corporation: </strong>{{robot.corporation}}</p>
-    </div>
+        <div class="robot">
+          <a data-ui-sref="robotShow({id: robot.id})">
+            <div class="robot-image" data-ng-style="{'background-image': 'url(' + robot.photoUrl + ')'}"></div>
+            <h3>{{robot.name}}</h3>
+          </a>
+      </div>
   </div>
 </section>

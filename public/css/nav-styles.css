@@ -4,44 +4,69 @@ Navbar
 
 /* Nav Wrapper */
 #nav-wrapper {
+  height: 11em;
   margin: 0;
   padding: 0;
 }
 
 /* Notice Bar */
-#notice-bar-container {
+#notice-bar {
+  display: flex;
+  justify-content: flex-start;
   height: 4em;
   background-color: #f3f3f3;
-  padding-left: 4em;
-  padding-right: 4em;
 }
 
-#notice-bar-container p {
+#notice-bar p {
+  margin-left: 4em;
   padding-top: 1.65em;
   font-family: 'Open Sans', sans-serif;
   font-size: .85em;
   color: #666;
 }
 
-#account-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+#notice-container {
+  width: 100%;
 }
 
-/*#account-container p {
-  color: black;
-}*/
+#notice-arrow-container {
+  height: 4em;
+}
+
+#notice-arrow-container img {
+  height: 100%;
+}
+
+#account-container {
+  display: flex;
+  width: 25em;
+  background-color: black;
+}
+
+
+#account-container p, #account-container a {
+  color: white;
+}
+
+#account-container a {
+  margin-left: .1em;
+}
+#account-container a:hover {
+  color: red;
+}
 
 /* Nav Bar */
 #nav-bar-container {
   display: flex;
-  height: 6.5em;
-  padding-top: 1.3em;
-  padding-left: 4em;
-  padding-right: 4em;
+  justify-content: flex-start;
+  height: 7em;
+  padding-top: 1.6em;
 }
 
+#logo-container {
+  width: 100%;
+  margin-left: 3.5em;
+}
 #logo-container img {
   width: 23em;
 }
@@ -51,6 +76,7 @@ Navbar
   justify-content: flex-end;
   align-items: flex-end;
   padding-bottom: 2em;
+  margin-right: 4em;
 }
 
 #nav-options-container p {

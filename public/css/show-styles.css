@@ -9,9 +9,6 @@ SHOW
   width: 100%;
   background-color: lightgray;
   background-size: cover;
-  background-image: url("/img/gallery/jaegar-2.jpg");
-  /*background-image: url("/img/gallery/gundam-1.jpg");*/
-  /*background-image: url("/img/gallery/petman-1.jpg");*/
 }
 
 #jumbo-image-form {
@@ -38,7 +35,7 @@ SHOW
 #robot-splash-container {
   display: flex;
   justify-content: flex-start;
-  height: 7em;
+  height: 5.5em;
 }
 
 #robot-left-container {
@@ -61,13 +58,14 @@ SHOW
   letter-spacing: .05em;
   color: white;
   margin-right: 1em;
+  margin-top: .25em;
   text-transform: uppercase;
 }
 
 #robot-splash-text h4 {
   font-weight: 400;
   color: white;
-  padding-top: 1.2em;
+  margin-top: 1.5em;
   text-transform: uppercase;
   font-size: .75em;
   font-weight: 200;

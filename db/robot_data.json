@@ -7,7 +7,7 @@
     "country": "Japan",
     "rClass": "AA",
     "year": "2032",
-    "photoUrl": "/img/gundam-1.jpg",
+    "photoUrl": "http://jordanbrauner.github.io/images/gallery/gundam-1.jpg",
     "statistics": {
       "power": "7",
       "energy": "6",
@@ -36,7 +36,7 @@
     "country": "USA",
     "rClass": "D",
     "year": "2017",
-    "photoUrl": "/img/big-dog-1.jpg",
+    "photoUrl": "http://jordanbrauner.github.io/images/gallery/big-dog-1.jpg",
     "statistics": {
       "power": "2",
       "energy": "5",
@@ -65,7 +65,7 @@
     "country": "USA",
     "rClass": "D",
     "year": "2019",
-    "photoUrl": "/img/petman-1.jpg",
+    "photoUrl": "http://jordanbrauner.github.io/images/gallery/petman-1.jpg",
     "statistics": {
       "power": "2",
       "energy": "3",
@@ -94,7 +94,7 @@
     "country": "USA",
     "rClass": "B",
     "year": "2027",
-    "photoUrl": "/img/andrew-1.jpg",
+    "photoUrl": "http://jordanbrauner.github.io/images/gallery/andrew-1.jpg",
     "statistics": {
       "power": "6",
       "energy": "9",

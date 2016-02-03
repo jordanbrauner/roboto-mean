@@ -22,26 +22,28 @@
   <section id="white-bg">
 
     <!-- Container for Nav Bar -->
-    <nav class="container-fluid" id="nav-wrapper">
+    <nav id="nav-wrapper">
 
       <!-- Notice and Account -->
-      <div class="container-fluid" id="notice-bar-container">
-        <div class="row">
-          <div class="col-md-6 col-xs-6" id="notice-container">
+      <div id="notice-bar">
+          <div id="notice-container">
             <p><strong>Latest arrival</strong>: Big Dog</p>
           </div>
-          <div class="col-md-6 col-xs-6" id="account-container">
-            <p>New to Roboto? <strong><a data-ui-sref="robotIndex">Sign up</a></strong>.</p>
+          <div id="account-container">
+            <div id="notice-arrow-container">
+              <img src="/img/design-elements/box-arrow-notice.png" />
+            </div>
+            <p>New to Roboto? <strong><a data-ui-sref="robotIndex">Sign up</a></strong></p>
           </div>
         </div>
       </div>
 
       <!-- Logo and nav links -->
-      <div class="container-fluid row" id="nav-bar-container">
-        <div class="col-md-4 col-xs-4" id="logo-container">
+      <div id="nav-bar-container">
+        <div id="logo-container">
           <a data-ui-sref="robotIndex"><img src="img/roboto/roboto-logo.png" /></a>
         </div>
-        <div class="col-med-8 col-xs-8" id="nav-options-container">
+        <div id="nav-options-container">
           <p><a data-ui-sref="robotIndex">WAREHOUSE</a></p>
           <div class="nav-rule"></div>
           <p><a data-ui-sref="robotNew">NEW</a></p>
