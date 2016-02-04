@@ -11,7 +11,8 @@ var corporationsController = require("./controllers/corporationsController");
 
 
 // CONFIGURE MONGOOSE
-mongoose.connect("mongodb://" + (process.env.MONGODB_URL_RW || "localhost/robotwarehouse"));
+// mongoose.connect("mongodb://" + (process.env.MONGODB_URL_RW || "localhost/robotwarehouse"));
+mongoose.connect(process.env.MONGODB_URL_RW);
 var db = mongoose.connection;
 // When successfully connected
 db.on("connected", function () {
@@ -49,3 +50,5 @@ app.use("/corporationdata", corporationsController);
 app.listen(process.env.PORT || 4000, function() {
   console.log("Server listening on port 4000");
 });
+
+console.log(process.env.MONGODB_URL_RW);
