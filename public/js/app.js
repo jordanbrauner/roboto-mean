@@ -11,7 +11,8 @@
       RouterFunction
     ]);
 
-  function RouterFunction($stateProvider) {
+  function RouterFunction($stateProvider, $rootScope) {
+
     $stateProvider
       .state("robotIndex", {
         url: "/robots",

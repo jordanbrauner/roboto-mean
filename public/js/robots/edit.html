@@ -10,7 +10,7 @@
     <label>Tagline</label>
     <input placeholder="Tagline" data-ng-model="RobotEditViewModel.robot.tagline">
     <label>Photo Url</label>
-    <input placeholder="http://www.url.com/" data-ng-model="RobotNewViewModel.robot.photoUrl">
+    <input placeholder="http://www.url.com/" data-ng-model="RobotEditViewModel.robot.photoUrl">
     <label>Bio</label>
     <textarea placeholder="Bio" data-ng-model="RobotEditViewModel.robot.bio"></textarea>
     <label>Country</label>
@@ -50,7 +50,7 @@
       </div>
     </div>
 
-    <button type="button" data-ng-click='RobotEditViewModel.update()'>Add {{RobotEditViewModel.robot.name}} to Warehouse</button>
-    <button type="button" data-ng-click='RobotEditViewModel.delete({ id: RobotEditViewModel.robot.id })'>Remove {{RobotNewViewModel.robot.name}} from Warehouse</button>
+    <button type="button" data-ng-click='RobotEditViewModel.update()'>Update {{RobotEditViewModel.robot.name}}'s information</button>
+    <button type="button" data-ng-click='RobotEditViewModel.delete({ id: RobotEditViewModel.robot.id })'>Remove {{RobotEditViewModel.robot.name}} from Warehouse</button>
   </form>
 </div>

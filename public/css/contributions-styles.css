@@ -116,3 +116,74 @@ Bottom Section
   height: 1%;
   border-top: 1px solid white;
 }
+
+#contribute-button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#promise-button {
+  width: 9em;
+  height: 5em;
+}
+
+#promise-button button {
+  border: 1px solid white;
+  width: 9em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+#promise-button p {
+  margin-top: 1em;
+  text-align: right;
+  font-size: .65em;
+}
+
+#contribute-button {
+  width: 13em;
+}
+
+#contribute-button button {
+  background-color: red;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.25em;
+  font-weight: 700;
+  height: 5em;
+  width: 13em;
+}
+
+#contribute-button p {
+  margin-top: 1em;
+  text-align: center;
+  font-size: .65em;
+}
+
+#social-button-container {
+
+}
+
+#social-button-container > div {
+  display: flex;
+  justify-content: space-between;
+  width: 18em;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  height: 5em;
+  width: 5em;
+}
+
+.social-button img {
+  width: 1.7em;
+}
+
+#social-button-container p {
+  margin-top: 1em;
+  font-size: .65em;
+}

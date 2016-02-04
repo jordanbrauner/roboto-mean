@@ -127,6 +127,35 @@
     <div class="make-a-difference-title-rule"></div>
   </div>
 
-  <button id="contribute-button"
+  <div id="contribute-button-container">
+
+    <!-- Promise button -->
+    <div id="promise-button">
+      <button>Promise</button>
+      <p>Make a promise to <strong>{{RobotShowViewModel.robot.corporation}}</strong> to pledge as soon as you’re able.</p>
+    </div>
+
+    <!-- Contribute button -->
+    <div id="contribute-button">
+      <button>Contribute</button>
+      <p>Do you part and contribute to <strong>{{RobotShowViewModel.robot.corporation}}</strong>.</p>
+    </div>
+
+    <div id="social-button-container">
+      <div>
+        <div class="social-button">
+          <img src="img/social-media/sm-fb-w.png" />
+        </div>
+        <div class="social-button">
+          <img src="img/social-media/sm-gp-w.png" />
+        </div>
+        <div class="social-button">
+          <img src="img/social-media/sm-tw-w.png" />
+        </div>
+      </div>
+      <p>Tell your colleagues about the work <strong>{{RobotShowViewModel.robot.corporation}}</strong> is doing to protect our planet.</p>
+    </div>
+  </div>
+
 
 </section>

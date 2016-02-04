@@ -21,12 +21,14 @@ var getErrorMessage = function(err) {
   }
 };
 
+// Index
 app.get("/", function(req, res) {
   Robot.find({}).then(function(results) {
     res.json(results);
   });
 });
 
+// Create
 app.post("/", function(req, res) {
   var robot = new Robot(req.body);
   robot.save(function(err) {
@@ -40,12 +42,60 @@ app.post("/", function(req, res) {
   });
 });
 
+// Show
 app.get("/:id", function(req, res) {
   Robot.findById(req.params.id).then(function(results) {
     res.json(results);
   });
 });
 
+// Update
+app.put("/:id", function(req, res) {
+
+  // Match put request to back-end model
+  var update = {
+    name: req.body.name,
+    tagline: req.body.tagline,
+    bio: req.body.bio,
+    corporation: req.body.corporation,
+    country: req.body.country,
+    rClass: req.body.rClass,
+    year: req.body.year,
+    photoUrl: req.body.photoUrl,
+    statistics: {
+      power: req.body.statistics.power,
+      energy: req.body.statistics.energy,
+      agility: req.body.statistics.agility,
+      armor: req.body.statistics.armor
+    },
+    pilots: {
+      left: {
+        name: req.body.pilots.left.name,
+        nationality: req.body.pilots.left.nationality,
+        battles: req.body.pilots.left.battles
+      },
+      right: {
+        name: req.body.pilots.right.name,
+        nationality: req.body.pilots.right.nationality,
+        battles: req.body.pilots.right.battles
+      }
+    },
+    contributions: [
+      {
+        goal: req.body.contributions.goal,
+        contributions: req.body.contributions.contributions
+      }
+    ]
+  };
+
+  //
+  Robot.findByIdAndUpdate(req.params.id, update).then(function(results) {
+    console.log("This is the robot that was found (and updated?): " + results);
+    res.json({ success: true });
+  });
+});
+
+// Delete
 app.delete("/:id", function(req, res) {
   Robot.findByIdAndRemove(req.params.id).then(function() {
     res.json({ success: true}) ;
@@ -53,22 +103,3 @@ app.delete("/:id", function(req, res) {
 });
 
 module.exports = app;
-
-
-// router.get("/", function(req, res) {
-//   Robot.find({}).then(function(results) {
-//     res.json(results);
-//   });
-// });
-//
-// router.post("/", function(req, res) {
-//   console.log("This is the request: " + req.body);
-// });
-//
-// router.get("/:id", function(req, res) {
-//   Robot.findById(req.params.id).then(function(results) {
-//     res.json(results);
-//   });
-// });
-//
-// module.exports = router;

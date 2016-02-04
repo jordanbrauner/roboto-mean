@@ -11,6 +11,10 @@
   ]);
 
   function ControllerFunction(RobotFactory, $state, $stateParams) {
+
+    // Scroll to top of page on state change
+    $("html, body").animate({ scrollTop: 0 }, 200);
+
     console.log("new.controller.js: ControllerFunction called to create new RobotFactory");
     this.robot = new RobotFactory();
     this.create = function() {
