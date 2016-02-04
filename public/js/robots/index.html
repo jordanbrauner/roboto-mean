@@ -21,7 +21,7 @@
 </div>
 
 <section id="index-container" class="container">
-  <div data-ng-repeat="robot in RobotIndexViewModel.robots">
+  <div data-ng-repeat="robot in RobotIndexViewModel.robots | limitTo:8">
         <div class="robot">
           <a data-ui-sref="robotShow({id: robot.id})">
             <div class="robot-image" data-ng-style="{'background-image': 'url(' + robot.photoUrl + ')'}"></div>

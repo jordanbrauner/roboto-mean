@@ -70,11 +70,9 @@
 }
 
 .robot {
-  margin: .85em;
+  margin: .85em .85em 2.25em .85em;
   height: 20em;
   width: 18em;
-  /*height: 22em;*/
-  /*width: 19em;*/
 }
 
 .robot h3 {
