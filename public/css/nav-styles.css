@@ -50,6 +50,7 @@ Navbar
 
 #account-container a {
   margin-left: .1em;
+  transition: color 0.2s ease;
 }
 #account-container a:hover {
   color: red;

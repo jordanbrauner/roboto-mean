@@ -1,22 +1,21 @@
 <!-- Main Image -->
 <div id="jumbo-image" class="shadow" data-ng-style="{'background-image': 'url(' + RobotShowViewModel.robot.photoUrl + ')'}"></div>
 
-<div id="show-width-limit">
-
-
-  <!-- Name and tagline container -->
-  <div id="robot-splash-container">
-    <div id="robot-splash-text">
-      <h3 id="robot-name">{{RobotShowViewModel.robot.name}}</h3>
-      <h4 id="robot-tagline">{{RobotShowViewModel.robot.tagline}}</h4>
-    </div>
-    <div id="splash-container-arrow">
-      <img src="/img/design-elements/box-arrow.png" />
-    </div>
-    <div>
-      <p><a data-ui-sref="robotEdit({ id: RobotShowViewModel.robot.id })"><strong>Edit</strong></a></p>
-    </div>
+<!-- Name and tagline container -->
+<div id="robot-splash-container">
+  <div id="robot-splash-text">
+    <h3 id="robot-name">{{RobotShowViewModel.robot.name}}</h3>
+    <h4 id="robot-tagline">{{RobotShowViewModel.robot.tagline}}</h4>
   </div>
+  <div id="splash-container-arrow">
+    <img src="/img/design-elements/box-arrow.png" />
+  </div>
+  <div>
+    <p><a data-ui-sref="robotEdit({ id: RobotShowViewModel.robot.id })"><strong>Edit</strong></a></p>
+  </div>
+</div>
+
+<div id="show-width-limit">
 
   <!-- Container for Robot Show -->
   <div id="show-container">

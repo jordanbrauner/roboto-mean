@@ -109,6 +109,10 @@ LEFT CONTAINER
   margin-right: 1em;
 }
 
+.placeholder-image:hover {
+  opacity: 0.8;
+}
+
 /*************************
 RIGHT CONTAINER
 *************************/
@@ -164,6 +168,7 @@ RIGHT CONTAINER
   border: 1.5px solid black;
   border-radius: 360px;
   text-align: center;
+  transition: border 0.25s ease;
 }
 
 .statistics-circle h4 {
@@ -174,6 +179,7 @@ RIGHT CONTAINER
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 2.25em;
+  transition: color 0.25s ease;
 }
 
 .statistics-circle p {
@@ -183,6 +189,40 @@ RIGHT CONTAINER
   font-size: .75em;
   color: #808080;
   text-transform: uppercase;
+  transition: color 0.25s ease;
+}
+
+/* Hover effects */
+#stat-power:hover {
+  border: 1.5px solid #f17022;
+}
+
+#stat-power:hover > h4, #stat-power:hover > p {
+  color: #f17022;
+}
+
+#stat-energy:hover {
+  border: 1.5px solid #fdb813;
+}
+
+#stat-energy:hover > h4, #stat-energy:hover > p {
+  color: #fdb813;
+}
+
+#stat-agility:hover {
+  border: 1.5px solid #f68b1f;
+}
+
+#stat-agility:hover > h4, #stat-agility:hover > p {
+  color: #f68b1f;
+}
+
+#stat-armor:hover {
+  border: 1.5px solid #62c2cc;
+}
+
+#stat-armor:hover > h4, #stat-armor:hover > p {
+  color: #62c2cc;
 }
 
 

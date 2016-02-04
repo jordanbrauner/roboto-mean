@@ -87,6 +87,10 @@ Middle Section
   font-size: .85em;
 }
 
+#top-contributions ul li:hover, #recent-contributions ul li:hover {
+  color: #BDBDBD
+}
+
 .contributors li {
   display: flex;
   justify-content: space-between;
