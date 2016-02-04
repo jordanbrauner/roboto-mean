@@ -30,9 +30,7 @@ db.on("disconnected", function () {
 // CONFIGURE DEPENDENCIES
 app.use(morgan('dev'));
 app.use(methodOverride());
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 

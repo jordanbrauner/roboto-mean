@@ -5,7 +5,7 @@ var Robot = require("../models/robot");
 var robotData = require("./robot_data.json");
 // var corporationData = require("./corporation_data.json");
 
-mongoose.connect("mongodb://" + (process.env.MONGODB_URL_RW || "localhost/robotwarehouse"));
+mongoose.connect("mongodb://localhost/robotwarehouse");
 var db = mongoose.connection;
 
 db.on("error", function(err) {
