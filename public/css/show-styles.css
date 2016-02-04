@@ -42,7 +42,7 @@ SPLASH CONTAINER
 
 #robot-splash-text {
   padding-left: 6em;
-  width: 70%;
+  width: 65%;
   display: flex;
   align-items: center;
   background-color: #000;
@@ -70,7 +70,7 @@ SPLASH CONTAINER
 }
 
 #splash-container-arrow {
-  width: 30%;
+  width: 25%;
   height: 100%;
   display: flex;
   align-self: flex-end;
@@ -80,6 +80,32 @@ SPLASH CONTAINER
   width: 2.5em;
 }
 
+#edit-robot {
+  text-align: center;
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  transition: background-color 0.25s ease;
+}
+
+#edit-robot:hover {
+  background-color: #c4c4c4;
+}
+
+#edit-robot:hover p a {
+  color: white;
+}
+
+#edit-robot p a {
+  text-align: center;
+  font-size: .8em;
+  text-transform: uppercase;
+  color: #c4c4c4;
+  transition: background-color 0.25s ease;
+}
 /*************************
 LEFT CONTAINER
 *************************/
@@ -140,15 +166,16 @@ RIGHT CONTAINER
 .title-box {
   box-sizing: border-box;
   text-align: center;
-  padding-top: .4em;
-  width: 8.5em;
-  height: 3.65em;
+  padding-top: .65em;
+  width: 9.5em;
+  height: 4.25em;
   background-color: black;
   color: white;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.2em;
-  font-weight: 700;
+  font-size: 1.1em;
+  font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: .025em;
   border: 12px solid white;
 }
 
