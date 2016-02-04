@@ -4,7 +4,11 @@
 
   <div id="more-top">
     <h2>More</h2>
-    <h4>Robots Worth Fighting For</h4>
+    <div id="more-title">
+      <div class="more-title-rule"></div>
+      <h4>Robots Worth Fighting For</h4>
+      <div class="more-title-rule"></div>
+    </div>
   </div>
 
   <div id="more-middle">
@@ -13,7 +17,6 @@
         <a data-ui-sref="robotShow({id: robot.id})">
           <div class="robot-image" data-ng-style="{'background-image': 'url(' + robot.photoUrl + ')'}"></div>
           <h3>{{robot.name}}</h3>
-          <!-- <p>72</p> -->
         </a>
       </div>
     </div>
