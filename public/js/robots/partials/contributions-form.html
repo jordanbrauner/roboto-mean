@@ -1,8 +1,9 @@
 <h2>How much will you contribute</h2>
 
-<form ng-show="contributing">
+<form data-ng-show="contributing">
   <label>Name</label>
-  <input placeholder="Your Name / Corporation Name" data-ng-model="RobotNewViewModel.robot.contributions.name">
+  <input placeholder="Your Name / Corporation Name" data-ng-model="RobotShowViewModel.robot.contributions.name">
   <label>Tagline</label>
-  <input placeholder="Keep it short and catchy" data-ng-model="RobotNewViewModel.robot.contributions.amount">
+  <input placeholder="How much would you like to donate?" data-ng-model="RobotShowViewModel.robot.contributions.amount">
+  <button data-ng-click="contributing = !contributing">Contribute</button>
 </form>

@@ -37,7 +37,7 @@ var RobotSchema = new Schema(
       contribute: [
         {
           name: String,
-          amount: Number
+          amount: String
         }
       ]
     }

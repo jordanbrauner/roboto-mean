@@ -14,6 +14,7 @@
   <link rel="stylesheet" type="text/css" href="css/form-styles.css">
   <link rel="stylesheet" type="text/css" href="css/footer-styles.css">
   <link rel="stylesheet" type="text/css" href="css/contributions-styles.css">
+  <link rel="stylesheet" type="text/css" href="css/more-styles.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,300italic,400italic,800italic,700italic|Open+Sans+Condensed:300,700,300italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -26,8 +27,10 @@
 
       <!-- Notice and Account -->
       <div id="notice-bar">
-          <div id="notice-container">
-            <p><strong>Latest arrival</strong>: Big Dog</p>
+          <div id="notice-container" data-ng-controller="RobotIndexController as RobotIndexViewModel">
+            <div data-ng-repeat="robot in RobotIndexViewModel.robots | limitTo:1">
+              <p>Latest arrival: <a data-ui-sref="robotShow(robot)"><strong>{{robot.name}}</strong></a></p>
+            </div>
           </div>
           <div id="account-container">
             <div id="notice-arrow-container">

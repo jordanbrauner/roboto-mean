@@ -1,9 +1,8 @@
 footer {
-  height: 15em;
-  /*max-width: 88em;*/
   margin: 0 auto;
   background-color: #2E2E2E;
   color: #808080;
+  padding-bottom: 3em;
 }
 
 footer a, footer a:visited, footer a:active, footer a:hover {
@@ -23,7 +22,7 @@ footer a:hover {
 #footer-rule {
   padding-top: 4em;
   border-bottom: 1px solid #808080;
-  margin-bottom: 3em;
+  margin-bottom: 5em;
 }
 
 footer .row div p {

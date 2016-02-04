@@ -1,22 +1,27 @@
 <!-- Main Image -->
 <div id="jumbo-image" class="shadow" data-ng-style="{'background-image': 'url(' + RobotShowViewModel.robot.photoUrl + ')'}"></div>
 
-<!-- Name and tagline container -->
-<div id="robot-splash-container">
-  <div id="robot-splash-text">
-    <h3 id="robot-name">{{RobotShowViewModel.robot.name}}</h3>
-    <h4 id="robot-tagline">{{RobotShowViewModel.robot.tagline}}</h4>
-  </div>
-  <div id="splash-container-arrow">
-    <img src="/img/design-elements/box-arrow.png" />
-  </div>
-</div>
+<div id="show-width-limit">
 
-<!-- Container for Robot Show -->
-<div class="row" id="show-container">
 
-  <!-- Left content container (Bio, Gallery) -->
-  <div class="col-md-7 col-xs-7">
+  <!-- Name and tagline container -->
+  <div id="robot-splash-container">
+    <div id="robot-splash-text">
+      <h3 id="robot-name">{{RobotShowViewModel.robot.name}}</h3>
+      <h4 id="robot-tagline">{{RobotShowViewModel.robot.tagline}}</h4>
+    </div>
+    <div id="splash-container-arrow">
+      <img src="/img/design-elements/box-arrow.png" />
+    </div>
+    <div>
+      <p><a data-ui-sref="robotEdit({ id: RobotShowViewModel.robot.id })"><strong>Edit</strong></a></p>
+    </div>
+  </div>
+
+  <!-- Container for Robot Show -->
+  <div id="show-container">
+
+    <!-- Left content container (Bio, Gallery) -->
     <div id="robot-left-container">
 
       <!-- Bio -->
@@ -32,12 +37,9 @@
         <img class="placeholder-image" />
       </div>
       <br  />
-      <p><a data-ui-sref="robotEdit({ id: RobotShowViewModel.robot.id })"><strong>[ EDIT ]</strong></a></p>
     </div>
-  </div>
 
-  <!-- Right content container (Statistics, History, Pilots) -->
-  <div class="col-md-5 col-xs-5">
+    <!-- Right content container (Statistics, History, Pilots) -->
     <div id="right-content-container">
 
       <!-- Decorative section title -->
@@ -49,19 +51,19 @@
 
       <!-- Statistics -->
       <div id="statistics-info-container">
-        <div class="statistics-circle">
+        <div class="statistics-circle" id="stat-power">
           <h4>{{RobotShowViewModel.robot.statistics.power}}</h4>
           <p>Power</p>
         </div>
-        <div class="statistics-circle">
+        <div class="statistics-circle" id="stat-energy">
           <h4>{{RobotShowViewModel.robot.statistics.energy}}</h4>
           <p>Energy</p>
         </div>
-        <div class="statistics-circle">
+        <div class="statistics-circle" id="stat-agility">
           <h4>{{RobotShowViewModel.robot.statistics.agility}}</h4>
           <p>Agility</p>
         </div>
-        <div class="statistics-circle">
+        <div class="statistics-circle" id="stat-armor">
           <h4>{{RobotShowViewModel.robot.statistics.armor}}</h4>
           <p>Armor</p>
         </div>
@@ -100,11 +102,14 @@
 
 
     </div>
+    <!-- END: Right content container and its container -->
+
   </div>
-  <!-- END: Right content container and its container -->
-
+  <!-- END: Show container -->
 </div>
-<!-- END: Show container -->
 
-<!-- Contributions Container -->
-<div id="contributions-container" class="container-fluid" data-ng-include="'./js/robots/partials/contributions.html'"></div>
+  <!-- Contributions Container -->
+  <div id="contributions-container" data-ng-include="'./js/robots/partials/contributions.html'"></div>
+
+  <!-- More Container -->
+  <div id="more-container" data-ng-include="'./js/robots/partials/more.html'"></div>

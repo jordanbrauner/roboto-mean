@@ -1,0 +1,26 @@
+
+<div id="more-width-limit">
+  <img src="img/design-elements/box-arrow.png" id="more-arrow" />
+
+  <div id="more-top">
+    <h2>More</h2>
+    <h4>Robots Worth Fighting For</h4>
+  </div>
+
+  <div id="more-middle">
+    <div data-ng-repeat="robot in RobotShowViewModel.robots | limitTo:3">
+      <div class="robot">
+        <a data-ui-sref="robotShow({id: robot.id})">
+          <div class="robot-image" data-ng-style="{'background-image': 'url(' + robot.photoUrl + ')'}"></div>
+          <h3>{{robot.name}}</h3>
+          <!-- <p>72</p> -->
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="more-bottom">
+    <button>Warehouse</button>
+  </div>
+
+</div>

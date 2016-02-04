@@ -5,6 +5,8 @@
   </div>
 
   <form>
+    <button type="button" data-ng-click='RobotEditViewModel.update()'>Update {{RobotEditViewModel.robot.name}}'s information</button><br /><br />
+
     <label>Name</label>
     <input placeholder="Name" data-ng-model="RobotEditViewModel.robot.name">
     <label>Tagline</label>

@@ -20,7 +20,7 @@
 
 }
 
-.robot {
+/*.robot {
   margin: 2em;
   height: 17em;
   width: 15em;
@@ -41,7 +41,7 @@
 
 .robot:hover {
   opacity: 0.8;
-}
+}*/
 
 .robot-image {
   background-size: cover;

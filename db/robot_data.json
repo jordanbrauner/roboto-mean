@@ -31,7 +31,31 @@
       "contribute": [
         {
           "name": "THE SOCIETY",
-          "amount": "2400000"
+          "amount": "2,400,000"
+        },
+        {
+          "name": "Earth Foundation",
+          "amount": "1,200,000"
+        },
+        {
+          "name": "Donald Trump",
+          "amount": "800,000"
+        },
+        {
+          "name": "Bernie Sanders",
+          "amount": "500,500"
+        },
+        {
+          "name": "The Kurosawa Foundation",
+          "amount": "500,000"
+        },
+        {
+          "name": "M.E.T.A.L.",
+          "amount": "220,000"
+        },
+        {
+          "name": "Mr. Baggins",
+          "amount": "210,000"
         }
       ]
     }
@@ -44,7 +68,7 @@
     "country": "USA",
     "rClass": "D",
     "year": "2017",
-    "photoUrl": "http://jordanbrauner.github.io/images/gallery/big-dog-1.jpg",
+    "photoUrl": "http://jordanbrauner.github.io/images/gallery/big-dog-2.jpg",
     "statistics": {
       "power": "2",
       "energy": "5",
