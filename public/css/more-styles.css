@@ -71,8 +71,10 @@
 
 .robot {
   margin: .85em;
-  height: 22em;
-  width: 19em;
+  height: 20em;
+  width: 18em;
+  /*height: 22em;*/
+  /*width: 19em;*/
 }
 
 .robot h3 {
@@ -95,7 +97,7 @@
   background-size: cover;
   background-position: top;
   width: 100%;
-  height: 19em;
+  height: 18em;
 }
 
 

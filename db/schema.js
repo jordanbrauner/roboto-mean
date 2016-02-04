@@ -24,12 +24,12 @@ var RobotSchema = new Schema(
       left: {
         name: String,
         nationality: String,
-        battles: Number
+        battles: String
       },
       right: {
         name: String,
         nationality: String,
-        battles: Number
+        battles: String
       }
     },
     contributions: {

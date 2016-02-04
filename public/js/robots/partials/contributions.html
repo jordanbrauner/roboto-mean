@@ -62,13 +62,13 @@
       <!-- Promise button -->
       <div id="promise-button">
         <button>Promise</button>
-        <p>Make a promise to pledge as soon as you’re able.</p>
+        <!-- <p>Make a promise to pledge as soon as you’re able.</p> -->
       </div>
 
       <!-- Contribute button -->
       <div id="contribute-button">
         <button data-ng-click="contributing = !contributing">Contribute</button>
-        <p>Do you part and contribute to <strong>{{RobotShowViewModel.robot.corporation}}</strong>.</p>
+        <!-- <p>Do you part and contribute to <strong>{{RobotShowViewModel.robot.corporation}}</strong>.</p> -->
       </div>
 
       <div id="social-button-container">
@@ -83,11 +83,12 @@
             <img src="img/social-media/sm-tw-w.png" />
           </div>
         </div>
-        <p>Tell your colleagues about the work <strong>{{RobotShowViewModel.robot.corporation}}</strong> is doing to protect our planet.</p>
+        <!-- <p>Tell your colleagues about the work <strong>{{RobotShowViewModel.robot.corporation}}</strong> is doing to protect our planet.</p> -->
       </div>
     </div>
 
-    <div id="contributing" class="container-fluid" data-ng-include="'./js/robots/partials/contributions-form.html'" data-ng-show="contributing" data-ng-hide="!contributing"></div>
+
+    <div id="contribution-form-container" data-ng-include="'./js/robots/partials/contributions-form.html'" data-ng-show="contributing" data-ng-hide="!contributing"></div>
   </section>
 
 </div>

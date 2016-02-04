@@ -242,5 +242,188 @@
         }
       ]
     }
+  },
+  {
+    "name": "Atlas",
+    "tagline": "DARPA's Child",
+    "bio": "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que.",
+    "corporation": "Boston Dynamics",
+    "country": "USA",
+    "rClass": "C",
+    "year": "2013",
+    "photoUrl": "http://jordanbrauner.github.io/images/gallery/atlas-1.jpg",
+    "statistics": {
+      "power": "2",
+      "energy": "1",
+      "agility": "2",
+      "armor": "4"
+    },
+    "pilots": {
+      "left": {
+        "name": "N/A",
+        "nationality": "N/A",
+        "battles": "N/A"
+      },
+      "right": {
+        "name": "N/A",
+        "nationality": "N/A",
+        "battles": "N/A"
+      }
+    },
+    "contributions": {
+      "goal": "Funded",
+      "contribute": [
+        {
+          "name": "THE SOCIETY",
+          "amount": "2,400,000"
+        },
+        {
+          "name": "Earth Foundation",
+          "amount": "1,200,000"
+        },
+        {
+          "name": "Donald Trump",
+          "amount": "800,000"
+        },
+        {
+          "name": "Bernie Sanders",
+          "amount": "500,500"
+        },
+        {
+          "name": "The Kurosawa Foundation",
+          "amount": "500,000"
+        },
+        {
+          "name": "M.E.T.A.L.",
+          "amount": "220,000"
+        },
+        {
+          "name": "Mr. Baggins",
+          "amount": "210,000"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Maria",
+    "tagline": "Fritz Lang",
+    "bio": "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que.",
+    "corporation": "Metropolis",
+    "country": "Germany",
+    "rClass": "B",
+    "year": "1927",
+    "photoUrl": "http://jordanbrauner.github.io/images/gallery/metropolis-1.jpg",
+    "statistics": {
+      "power": "4",
+      "energy": "2",
+      "agility": "5",
+      "armor": "2"
+    },
+    "pilots": {
+      "left": {
+        "name": "Maria Helm",
+        "nationality": "German",
+        "battles": "2"
+      },
+      "right": {
+        "name": "N/A",
+        "nationality": "N/A",
+        "battles": "N/A"
+      }
+    },
+    "contributions": {
+      "goal": "Funded",
+      "contribute": [
+        {
+          "name": "THE SOCIETY",
+          "amount": "2,400,000"
+        },
+        {
+          "name": "Earth Foundation",
+          "amount": "1,200,000"
+        },
+        {
+          "name": "Donald Trump",
+          "amount": "800,000"
+        },
+        {
+          "name": "Bernie Sanders",
+          "amount": "500,500"
+        },
+        {
+          "name": "The Kurosawa Foundation",
+          "amount": "500,000"
+        },
+        {
+          "name": "M.E.T.A.L.",
+          "amount": "220,000"
+        },
+        {
+          "name": "Mr. Baggins",
+          "amount": "210,000"
+        }
+      ]
+    }
+  },
+  {
+    "name": "ASIMO",
+    "tagline": "Advanced Step in Innovative Mobility",
+    "bio": "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que.",
+    "corporation": "Honda",
+    "country": "Japan",
+    "rClass": "C",
+    "year": "2000",
+    "photoUrl": "http://jordanbrauner.github.io/images/gallery/asimo-1.jpg",
+    "statistics": {
+      "power": "2",
+      "energy": "3",
+      "agility": "3",
+      "armor": "2"
+    },
+    "pilots": {
+      "left": {
+        "name": "N/A",
+        "nationality": "N/A",
+        "battles": "N/A"
+      },
+      "right": {
+        "name": "N/A",
+        "nationality": "N/A",
+        "battles": "N/A"
+      }
+    },
+    "contributions": {
+      "goal": "Funded",
+      "contribute": [
+        {
+          "name": "THE SOCIETY",
+          "amount": "2,400,000"
+        },
+        {
+          "name": "Earth Foundation",
+          "amount": "1,200,000"
+        },
+        {
+          "name": "Donald Trump",
+          "amount": "800,000"
+        },
+        {
+          "name": "Bernie Sanders",
+          "amount": "500,500"
+        },
+        {
+          "name": "The Kurosawa Foundation",
+          "amount": "500,000"
+        },
+        {
+          "name": "M.E.T.A.L.",
+          "amount": "220,000"
+        },
+        {
+          "name": "Mr. Baggins",
+          "amount": "210,000"
+        }
+      ]
+    }
   }
 ]
