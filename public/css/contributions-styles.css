@@ -147,18 +147,23 @@ Bottom Section
 #promise-button {
   display: flex;
   justify-content: center;
-  width: 15em;
+  width: 13em;
   /*margin-right: 5em;*/
 }
 
 #promise-button button {
   box-sizing: border-box;
   border: 1px solid white;
+  padding-right: 6.25em;
   width: 9em;
   height: 3.5em;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 700;
+}
+
+#promise-button button:hover {
+  background-color: black;
 }
 
 #promise-button p {

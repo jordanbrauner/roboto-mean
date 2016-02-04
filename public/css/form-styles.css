@@ -29,6 +29,10 @@ Core Styles
   width: 100%;
 }
 
+form {
+  max-width: 1200px;
+}
+
 form label {
   font-size: .85em;
   font-weight: 700;
