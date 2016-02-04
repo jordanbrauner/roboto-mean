@@ -9,7 +9,7 @@
     ]);
 
   function FactoryFunction($resource) {
-    return $resource("mongodb://" + process.env.MONGODB_URL_RW + "/robotdata/:id", {  id: '@_id' }, {
+    return $resource(process.env.MONGODB_URL_RW, {  id: '@_id' }, {
       update: { method: "PUT" }
     });
   }
