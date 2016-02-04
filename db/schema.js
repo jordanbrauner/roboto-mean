@@ -32,12 +32,15 @@ var RobotSchema = new Schema(
         battles: Number
       }
     },
-    contributions: [
-      {
-        goal: Number,
-        contributions: String
-      }
-    ]
+    contributions: {
+      goal: String,
+      contribute: [
+        {
+          name: String,
+          amount: Number
+        }
+      ]
+    }
   },
   {
     toObject: {virtuals: true},

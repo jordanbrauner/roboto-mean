@@ -80,12 +80,15 @@ app.put("/:id", function(req, res) {
         battles: req.body.pilots.right.battles
       }
     },
-    contributions: [
-      {
-        goal: req.body.contributions.goal,
-        contributions: req.body.contributions.contributions
-      }
-    ]
+    contributions: {
+      goal: req.body.contributions.goal,
+      contribute: [
+        {
+          name: req.body.contributions.contribute.name,
+          amount: req.body.contributions.contribute.amount
+        }
+      ]
+    }
   };
 
   //

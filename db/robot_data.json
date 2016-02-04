@@ -26,7 +26,15 @@
         "battles": "4"
       }
     },
-    "contributions": []
+    "contributions": {
+      "goal": "10,000,000",
+      "contribute": [
+        {
+          "name": "THE SOCIETY",
+          "amount": "2400000"
+        }
+      ]
+    }
   },
   {
     "name": "BigDog",
@@ -55,7 +63,15 @@
         "battles": "4"
       }
     },
-    "contributions": []
+    "contributions": {
+      "goal": "8,000,000",
+      "contribute": [
+        {
+          "name": "THE SOCIETY",
+          "amount": "2400000"
+        }
+      ]
+    }
   },
   {
     "name": "PETMAN",
@@ -84,7 +100,15 @@
         "battles": "4"
       }
     },
-    "contributions": []
+    "contributions": {
+      "goal": "500,000",
+      "contribute": [
+        {
+          "name": "THE SOCIETY",
+          "amount": "2400000"
+        }
+      ]
+    }
   },
   {
     "name": "Andrew",
@@ -113,6 +137,14 @@
         "battles": "4"
       }
     },
-    "contributions": []
+    "contributions": {
+      "goal": "100,000,000",
+      "contribute": [
+        {
+          "name": "THE SOCIETY",
+          "amount": "2400000"
+        }
+      ]
+    }
   }
 ]
