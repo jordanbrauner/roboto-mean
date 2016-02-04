@@ -117,7 +117,7 @@
   justify-content: center;
 }
 
-#more-container button {
+#more-bottom button {
   background-color: #2E2E2E;
   border: .1em solid white;
   width: 14em;
@@ -125,4 +125,9 @@
   font-family: 'Open Sans Codensed', sans-serif;
   font-size: 1.2em;
   font-weight: 700;
+}
+
+#more-bottom button:hover {
+  color: red;
+  border: 1px solid red;
 }

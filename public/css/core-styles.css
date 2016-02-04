@@ -7,6 +7,15 @@ html, body {
   padding: 0;
 }
 
+body {
+  min-width: 950px;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+}
+
 #white-bg, footer {
   margin: 0 auto;
 }
@@ -14,11 +23,15 @@ html, body {
 #white-bg {
   background-color: white;
   min-height: 50em;
-  min-width: 750px;
+  min-width: 950px;
 }
 
-#show-width-limit, #index-width-limit, #contributions-width-limit {
+#show-width-limit, #index-width-limit {
   margin: 0 auto;
+  max-width: 1300px;
+}
+
+#contributions-width-limit.ng-scope {
   max-width: 1300px;
 }
 
