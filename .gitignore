@@ -1,5 +1,5 @@
-node_modules
-planning
+node_modules/
+planning/
 
 config/database.js
 config/auth.js
