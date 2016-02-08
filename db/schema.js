@@ -60,6 +60,15 @@ var CorporationSchema = new Schema(
   }
 );
 
+var UserSchema = new Schema({
+  local: {
+    email: String,
+    passowrd: String
+  },
+  name: String
+});
+
+
 RobotSchema.virtual("id").get(function() {
   return this._id;
 });
