@@ -41,11 +41,20 @@ button {
   max-width: 1300px;
 }
 
+#about-width-limit {
+  max-width: 1300px;
+}
+
 #more-width-limit.ng-scope {
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
   padding: 0;
+}
+
+.nav-bar-push {
+  width: 100%;
+  height: 8.5em;
 }
 
 /**************************************************

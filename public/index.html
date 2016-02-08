@@ -15,6 +15,7 @@
   <link rel="stylesheet" type="text/css" href="css/footer-styles.css">
   <link rel="stylesheet" type="text/css" href="css/contributions-styles.css">
   <link rel="stylesheet" type="text/css" href="css/more-styles.css">
+  <link rel="stylesheet" type="text/css" href="css/roboto/roboto-about-styles.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,300italic,400italic,800italic,700italic|Open+Sans+Condensed:300,700,300italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -23,40 +24,44 @@
   <section id="white-bg">
 
     <!-- Container for Nav Bar -->
-    <nav id="nav-wrapper">
+      <nav id="nav-wrapper">
+        <div id="white-nav">
 
-      <!-- Notice and Account -->
-      <div id="notice-bar">
-          <div id="notice-container" data-ng-controller="RobotIndexController as RobotIndexViewModel">
-            <div data-ng-repeat="robot in RobotIndexViewModel.robots | limitTo:1">
-              <p>Latest arrival: <a data-ui-sref="robotShow(robot)"><strong>{{robot.name}}</strong></a></p>
+        <!-- Notice and Account -->
+        <div id="notice-bar">
+            <div id="notice-container" data-ng-controller="RobotIndexController as RobotIndexViewModel">
+              <div data-ng-repeat="robot in RobotIndexViewModel.robots | limitTo:1">
+                <p>Latest arrival: <a data-ui-sref="robotShow(robot)"><strong>{{robot.name}}</strong></a></p>
+              </div>
+            </div>
+            <div id="account-container">
+              <div id="notice-arrow-container">
+                <img src="/img/design-elements/box-arrow-notice.png" />
+              </div>
+              <p>New to Roboto? <strong><a data-ui-sref="robotIndex">Sign up</a></strong></p>
             </div>
           </div>
-          <div id="account-container">
-            <div id="notice-arrow-container">
-              <img src="/img/design-elements/box-arrow-notice.png" />
-            </div>
-            <p>New to Roboto? <strong><a data-ui-sref="robotIndex">Sign up</a></strong></p>
-          </div>
         </div>
-      </div>
 
-      <!-- Logo and nav links -->
-      <div id="nav-bar-container">
-        <div id="logo-container">
-          <a data-ui-sref="robotIndex"><img src="img/roboto/roboto-logo.png" /></a>
-        </div>
-        <div id="nav-options-container">
-          <p><a data-ui-sref="robotIndex">WAREHOUSE</a></p>
-          <div class="nav-rule"></div>
-          <p><a data-ui-sref="robotNew">NEW</a></p>
-          <div class="nav-rule"></div>
-          <p>CONTACT</p>
-          <div class="nav-rule"></div>
-          <p>CAREERS</p>
+        <!-- Logo and nav links -->
+        <div id="nav-bar">
+          <div id="logo-container">
+            <a data-ui-sref="robotIndex"><img src="img/roboto/roboto-logo-f.png" /></a>
+          </div>
+          <div id="nav-options-container">
+            <p><a data-ui-sref="robotoAbout">ABOUT</a></p>
+            <div class="nav-rule"></div>
+            <p><a data-ui-sref="robotIndex">WAREHOUSE</a></p>
+            <div class="nav-rule"></div>
+            <p>RANKINGS</p>
+            <div class="nav-rule"></div>
+            <p><a data-ui-sref="robotNew">NEW</a></p>
+          </div>
         </div>
       </div>
     </nav>
+
+    <div class="nav-bar-push"></div>
 
     <!-- Angular Main -->
     <main data-ui-view></main>
@@ -79,9 +84,9 @@
         <div class="footer-rule"></div>
         <p><a data-ui-sref="robotNew">NEW</a></p>
         <div class="footer-rule"></div>
-        <p>CONTACT</p>
+        <p>HISTORY</p>
         <div class="footer-rule"></div>
-        <p>CAREERS</p>
+        <p>CONTACT</p>
       </div>
     </div>
   </footer>
